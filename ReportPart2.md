@@ -34,3 +34,46 @@
 <br/><br/>
 
 ---
+<br/>
+
+<div align="center">
+
+ <h2> 1. Software Quality Factors and Metrics</h2>
+
+</div>
+<br/>
+
+<p>contents</p>
+ 
+
+<br/>
+
+---
+
+<div align="center">
+
+ <h2> 2. Software Quality Activities</h2>
+
+</div>
+<br/>
+
+<p>contents</p>
+
+<br/>
+
+---
+<br/>
+
+<div align="center">
+
+ <h2> 3. Software Testing Strategies</h2>
+
+</div>
+<br/>
+
+<p>contents</p>
+
+<br/>
+
+---
+<br/>
