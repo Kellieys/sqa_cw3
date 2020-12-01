@@ -26,7 +26,7 @@
 | Lim Kelly | 20024694 |
 | Lee Ze-Cong (efyzl1) | 20006942 |
 | Yap Jun Kiat (hcyjy2) | 20093907 |
-| Ling Guok Ging (hfykl3) | 20035543 |
+| Ling Kuok Ging (hfykl3) | 20035543 |
 | Raveen A/L Pandian (kefey6rpp) | 18024425 |
 
 </div>
@@ -206,6 +206,15 @@ We are going to apply Derived Metric on our Flights application by calculating P
 <div align="center">
 
  <h2> 2. Software Quality Activities</h2>
+
+ #### Measuring impact of change
+ When a bug or defect is detected in the Flight project, change is required to perform the fix. The impact of change is measured to determine how significant was the change and how it affected the project. It is also required to check if the Flight project is compatabile with the new change after fixing the defects.
+
+ #### Performing QA audits
+ Performing SQA audits ensures that the Flight project adheres to the defined standards and procedures. It also makes sure that the requirements of the Flight project are met. If the quality standards or the requirements are not met, it will be reflected to the development team to make changes accordingly.
+
+ #### Keeping records and reporting
+ Keeping records and reporting ensures that the Flight project has all the necessary documents for future reference, and the documents recorded are also shared with the stakeholders. The documents are also extremely useful in case something went wrong in the Flight project, the development team can look at the documentation and figure out what is the problem. 
 
 </div>
 <br/>
