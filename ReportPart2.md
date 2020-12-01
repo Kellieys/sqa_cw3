@@ -43,7 +43,7 @@
 </div>
 <br/>
 
-<p>
+
   
 <h3> SOFTWARE QUALITY FACTORS </h3>
 
@@ -154,9 +154,7 @@ Interoperability of the web application can be achieved by assessing the followi
 * Checking for functionality on different browsers
 * If the results are not positive, then use monitor tools to detect source of error
 
-
-
-## METRICS
+## Metrics
 
 ### Direct Metrics
 Direct metric is a metric that does not rely upon the measure of any other attribute. It is a functional that have only one variable.
@@ -172,9 +170,13 @@ Derived Metrics are measured using more than one attributes. It combines a numbe
 
 We are going to apply Derived Metric on our Flights application by calculating Programmer Productivity.
 
-****Programmer Productivity = LOC / Programming Time****
+$Programmer\hspace{0.1cm}Productivity = \frac{LinesOfCode}{ProgrammingTime}$
 
-****Programmer Productivity = 1163/2 = 582 LOC/person-month****
+$Programmer\hspace{0.1cm}Productivity = \frac{1163}{2} = 582 \hspace{0.1cm}LOC/person\hspace{0.1cm}per\hspace{0.1cm}month$
+
+$Module\hspace{0.1cm}Defect\hspace{0.1cm}Density = \frac{NumberOfDefects}{Module Size}$
+
+$Defect\hspace{0.1cm}Detection\hspace{0.1cm}Efficiency=\frac{NumberOfDefectsDetected}{TotalNumberOfDefects}$
 
 ### Internal Metrics
 ****Size of Flights Application****
@@ -196,8 +198,12 @@ We are going to apply Derived Metric on our Flights application by calculating P
 | font | 4 |
 | css | 2 |
 
-</p>
- 
+### Code Size Metrics
+
+### Complexity Metrics
+## Function-Oriented Testing
+
+
 
 <br/>
 
@@ -239,3 +245,37 @@ We are going to apply Derived Metric on our Flights application by calculating P
 
 ---
 <br/>
+
+## Appendix
+
+### 1. Software Requirements
+#### Functional Requirements
+**FR1** The system shall display analytics that is customized based on the user's input of flight origin, flight destination, airline of the flight, and date of flight.
+
+**FR2** The system shall support inputs that must perform the following searches in each input field: 
+- Finding the exact match of the phrase
+- Finding the abbreviation of the phrase on input that support it
+
+**FR3** The system shall display "No options" on each input field if the input is not valid
+
+**FR4** The system shall display error messages if the required input fields are empty
+
+**FR5** The system shall perform and display the analytics on the following comparisons:
+
+- Airlines statistics such as total flights, market share, airline delays and more on the same flight route
+- Each type of reasoning of flight delay on the selected airline from the airline input field
+- Each type of reasoning of flight delay between the selected airline and the average of all airlines
+
+**FR6** User shall be able to sort the comparison table either in an alphabetical order or in a numerical order
+
+#### Non-Functional Requirements
+**NFR1** The web application must be accessible in a single window on a computer or mobile device. 
+
+**NFR2** The web application shall only be functional with an internet connection.
+
+**NFR3** The web application shall be run on a relatively new web browser: Chrome 63 or higher, Edge 15 or higher, Firefox 57 or higher, Safari 11 or higher, Mobile Chrome 63 or higher, Mobile Safari 11 or higher
+
+**NFR4** Analytics data shall reflect on the user interface with an average response time that is less than 8 seconds. The maximum response time should not be greater than 20 seconds.
+
+---
+</br>
