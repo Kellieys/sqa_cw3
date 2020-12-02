@@ -225,11 +225,8 @@ $Defect\hspace{0.1cm}Detection\hspace{0.1cm}Efficiency=\frac{NumberOfDefectsDete
 </div>
 <br/>
 
-<p>contents</p>
-
-<br/>
-
 ---
+
 <br/>
 
 <div align="center">
@@ -239,7 +236,188 @@ $Defect\hspace{0.1cm}Detection\hspace{0.1cm}Efficiency=\frac{NumberOfDefectsDete
 </div>
 <br/>
 
-<p>contents</p>
+<h3> 3.1 Testing objectives </h3>
+
+<p> 
+Testing is an impotant quality control activity. this is to detect and fix defects. The main objectives are to identify and reveal errors or defects and ensure its correctness, completeness of the software and conforming to the requirements.  
+</P>
+
+<br />
+
+<h3> 3.1 Overview of Process</h3>
+
+<div align="center">
+ <br />
+  <img src="overviewprocess.png" />
+    <h4>Figure 3.1 Flow diagram for process overview </h4>
+
+</div>
+
+ <br />
+
+<h3>3.2 Software Testing Strategies and Planning</h3>
+
+<h4> 3.2.1 For Entity and Size </h4>
+<h4> 3.2.1.1 Unit Testing </h4>
+
+#### The unit testing concerns with the correctness of individual function and module. In this flight project the unit testing will focuses on three levels:
+
+<br />
+
+#### Input functions:
+* Origin
+* Destination
+* Airiline
+* From
+* To
+* Month
+* Day 
+
+<br />
+
+<h4> 3.2.1.2 Testing Design </h4>
+<br />
+
+Test Case 1: <br />
+<p>* where x = all IATA code or airport names in database</p>
+
+<div>
+
+if (input = x) {
+  dropdown = x;
+} <br/>
+else { dropdown = empty; }
+
+</div>
+
+<br />
+
+Test Case 2: <br />
+<p>* where z = Click on input field</p>
+<p>* where y = empty input</p>
+<p>* where x = all IATA code or airport names in database</p>
+
+<div>
+
+if ( z = y ) {
+  dropdown = x;
+} <br/>
+else { dropdown = not shown; }
+
+</div>
+
+<br />
+
+Test Case 3: <br />
+<p>* where x = all IATA code or airline names in database</p>
+
+<div>
+
+if (input = x) {
+  dropdown = x;
+} <br/>
+else { dropdown = empty; }
+
+</div>
+
+<br />
+
+Test Case 4: <br />
+<p>* where z = Click on input field</p>
+<p>* where y = empty input</p>
+<p>* where x = all IATA code or airline names in database</p>
+
+<div>
+
+if ( z = y ) {
+  dropdown = x;
+} <br/>
+else { dropdown = not shown; }
+
+</div>
+
+
+<br />
+
+| ID | Test Items | Secnario | Input | Expexted Output | Test Factor | 
+| :------- | ----: | ----: | ----: | ----: | ----: | ----: |
+| 1 | Input Origin | Test Case 1 | Chicago O'Hare International Aiport, <br /> ORD, C, c, Chi, chi | Chicago O'Hare International Aiport | Correctness |
+| 2 | Input Destination | Test Case 1 | Wendover Airport <br /> Wen, W, w, we, E, en | Wendover Airport | Correctness |
+| 3 | Input Origin & Destination | Test Case 2 | OnClick | Show all dropdown | Correctness |
+| 4 | Input Airline | Test Case 3 | United Air Lines Inc. <br /> U, u, UA, ua  | United Air Lines Inc. | Correctness |
+| 5 | Input Airline | Test Case 4 | OnClick <br /> | Show all dropdown | Correctness |
+
+<br />
+
+#### Output functions:
+* Search Button
+* Sorting Button
+* Output Pie Chart and Bar Graph
+
+
+<h4> 3.2.1.2 Testing Design </h4>
+
+<br />
+
+| ID | Test Items | Secnario | Expexted Outcome | Test Factor | Pass or Fail
+| :------- | ----: | ----: | ----: | ----: | ----: | ----: |
+| 1 | a | a | a | a | ? |
+
+
+<br />
+
+
+
+#### API functions:
+* Caluclations
+* Retrieving from Database
+
+<br />
+
+
+
+
+
+<br />
+
+<h4> 3.1.2 Integration Testing</h4>
+<p>testplan</p>
+
+
+<br />
+
+| ID | Test Items | Secnario | Expexted Outcome | Test Factor | Pass or Fail
+| :------- | ----: | ----: | ----: | ----: | ----: | ----: |
+|a | a| a|a |a | ? |
+
+
+<br/>
+
+<h4> 3.1.3 System Testing</h4>
+<p>testplan</p>
+
+
+<br />
+
+| ID | Test Items | Secnario | Expexted Outcome | Test Factor | Pass or Fail
+| :------- | ----: | ----: | ----: | ----: | ----: | ----: |
+|a | a| a|a |a | ? |
+
+
+<h3> 3.2 For structure & function </h3>
+
+<h4> 3.2.1 Black Box </h4>
+<p>• Equivalent Class Partitioning.
+• Boundary Values Analysis.</P>
+
+
+<h4> 3.2.2 White Box </h4>
+<p>Testing coverage (line, path…)</p>
+
+
+<br/>
+
+<h2> 3.x GUI Testing<h2>
 
 <br/>
 
