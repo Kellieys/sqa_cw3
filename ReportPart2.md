@@ -155,8 +155,110 @@ Interoperability of the web application can be achieved by assessing the followi
 * If the results are not positive, then use monitor tools to detect source of error
 
 ## Metrics
+### Halstead Metrics
+Halstead metrics was introduced and developed by Maurice Halstead in 1977. It is one of the oldest measures of program complexity and often used to measure the maintenance metric. Halstead's metrics interprets a software's source code as a sequence of tokens and it classifies each of them to be an operator or operand. 
 
-### Direct Metrics
+Where operator could be the storage class specifiers (i.e. static, auto, etc.), type qualifiers (i.e. const), reserved words from programming languages (i.e. break, default, public, etc.), or simply mathematical and logical operators(i.e. +, -, &&, etc.) . On the other hand, operands could be the identifiers (i.e. variable names), type specifiers (i.e. Boolean, integer, etc.) or a constant number of character. 
+
+The token is counted as: 
+
+- $n_1$ - number of unique operators
+- $n_2$ - number of unique operands
+- $N_1$ - total number of operators
+- $N_2$ - total number of operands
+
+Following are Halstead metrics that are derived from these quantities with brief description and fixed formulas: 
+
+**Program Length ($N$)**
+
+The program length measures the sum of the total number of operators and operands.
+
+${\displaystyle N=N_{1}+N_{2}\,}$
+
+**Vocabulary Size ($n$)**
+
+The vocabulary size measures the sum of the total number of unique operators and operands. 
+
+${\displaystyle \eta =\eta _{1}+\eta _{2}\,}$
+
+**Program Volume ($V$)**
+
+The program volume measures the size of the implementation of an algorithm. It focuses more on the number of operations performed and operands handled in the algorithm, making it less sensitive to code layout. 
+
+${\displaystyle V=N\times \log _{2}\eta }$
+
+**Difficulty Level ($D$)**
+
+The difficulty level measures the error proneness of the program. It is proportional to the number of unique operators and also between total number of operands and the number of unique operands. 
+
+${\displaystyle D={\eta *{1} \over 2}\times {N*{2} \over \eta _{2}}}$
+
+**Program Level ($L$)**
+
+The program level measures the opposite or inverse of error proneness. 
+
+$L = {1 \over D}$
+
+**Effort to implement ($E$)**
+The 'effort to implement' metric measures the effort required to understand the program. It is proportional to the volume($V$) and difficulty level($D$) of the program. 
+
+$E = {V \times D}$
+
+**Time to implement ($T$)**
+
+The 'time to implement' metric measures the approximate of time to implemented the program. It is proportional to effort ($E$).
+
+${\displaystyle T={E \over 18}}seconds $
+
+**Number of delivered bugs ($B$)**
+
+The 'number of delivered bugs' metric measures approximate number of errors in implementation and the overall complexity of the software. 
+
+${\displaystyle B={E^{2 \over 3} \over 3000}}$ OR ${\displaystyle B={V \over 3000}}$
+</br>
+### Plato
+
+Plato is a software complexity analysis tool specifically for JavaScript projects. It generates a report based on the complexity data from a library called escomplex. Behind this library, it calculates both Halstead's metrics and McCabe's Cyclomatic complexity. However, it is important to interpret the report produced by these tools in a mindful manner. It helps to identify certain areas of code that contains unknown bugs or inefficiencies and helps to visualise the complexity distributed across on each function or the whole project.
+
+The following are metrics produced by plato on the client application. 
+
+**Maintainability Score**
+
+The maintainability score considers the Halstead volume, cyclomatic complexity, and the line count for each source file.
+
+![maintainability](media/maintainability.png)
+
+**Lines of Code**
+
+The lines of code graph helps identify large files, which are typically indicative of code that should be broken down or simplified.
+
+![LOC](media/LOC.png)
+
+Total Lines of Code for Client = 762
+
+Total Lines of Code for API = 288
+
+Adding both LOC from Client and API = 1050 lines of code
+
+**Estimated Error Count**
+
+This number is calculated using the Halstead-delivered bug score.
+
+![errorCount](media/ErrorsInImplementation.png)
+
+**Summary**
+|Files|Complexity|Lines Of Code|Est. Errors|
+|:---:|:---:|:---:|:---:|
+|index.js|1|12|0.05|
+|App.js|1|17|0.03|
+|Dashboard.js|4|60|0.32|
+|AirlineFlightsInfo.js|18|249|1.85|
+|AirlinesFlightsInfo.js|12|136|1.11|
+|FlightPlanHeader.js|3|29|0.14|
+|FlightsFilter.js|8|259|2.80|
+
+
+<!-- ### Direct Metrics
 Direct metric is a metric that does not rely upon the measure of any other attribute. It is a functional that have only one variable.
 
 We can apply Direct Metric on our Flights application by calculating it's size in terms of LOC (Lines of Code), and the programming time in terms of person-months.
@@ -176,14 +278,14 @@ $Programmer\hspace{0.1cm}Productivity = \frac{1163}{2} = 582 \hspace{0.1cm}LOC/p
 
 $Module\hspace{0.1cm}Defect\hspace{0.1cm}Density = \frac{NumberOfDefects}{Module Size}$
 
-$Defect\hspace{0.1cm}Detection\hspace{0.1cm}Efficiency=\frac{NumberOfDefectsDetected}{TotalNumberOfDefects}$
+$Defect\hspace{0.1cm}Detection\hspace{0.1cm}Efficiency=\frac{NumberOfDefectsDetected}{TotalNumberOfDefects}$ -->
 
-### Internal Metrics
+<!-- ### Internal Metrics
 ****Size of Flights Application****
 
 | Total No. of Lines | LOC | No. of Classes|
 | :----: | :---: | :---: |
-| 1,326 | 1,163 | 16 |
+| 1,326 | 1,163 | 16 | -->
 
 
 ### External Metrics
@@ -197,12 +299,6 @@ $Defect\hspace{0.1cm}Detection\hspace{0.1cm}Efficiency=\frac{NumberOfDefectsDete
 | other | 10 |
 | font | 4 |
 | css | 2 |
-
-### Code Size Metrics
-
-### Complexity Metrics
-## Function-Oriented Testing
-
 
 
 <br/>
@@ -381,14 +477,38 @@ else { dropdown = not shown; }
 <br />
 
 <h4> 3.1.2 Integration Testing</h4>
-<p>testplan</p>
+
+<br/>
+Test Case 1:
+<p>Launch website and establish connection to MariaDB</p>
 
 
-<br />
+<br/>
+Test Case 2:
+<p>Click on "Origin" dropdown menu</p>
 
-| ID | Test Items | Secnario | Expexted Outcome | Test Factor | Pass or Fail
+<br/>
+Test case 3:
+<p>Click on "Destination" dropdown menu</p>
+
+<br/>
+Test Case 4:
+<p>Click on "Airline" dropdown menu</p>
+
+<br/>
+Test Case 5:
+<p>Input related data and click on search button</p>
+
+<br/>
+Test Case 6
+
+| ID | Test Items | Secnario | Input | Expexted Outcome | Test Factor | Pass or Fail
 | :------- | ----: | ----: | ----: | ----: | ----: | ----: |
-|a | a| a|a |a | ? |
+| 1 | Check the connection with database | Test Case 1 | http://172.104.176.214:3000/ | Connection is established successfully | Correctness | ? |
+| 2 | Get Airports data | Test Case 2 | onClick | Display all airports on screen | Correctness|
+| 3 | Get Airports data | Test Case 3 | onClick | Display all airports on screen| Correctness|
+| 4 | Get Airlines data | Test Case 4 | onClick | Display all airlines on screen | Correctness|
+| 5 | Obtain data from user inputs | Test Case 5 | onClick | Display flight's data, graphs and charts related to the user inputs | Correctness|
 
 
 <br/>
