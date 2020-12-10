@@ -477,14 +477,38 @@ else { dropdown = not shown; }
 <br />
 
 <h4> 3.1.2 Integration Testing</h4>
-<p>testplan</p>
+
+<br/>
+Test Case 1:
+<p>Launch website and establish connection to MariaDB</p>
 
 
-<br />
+<br/>
+Test Case 2:
+<p>Click on "Origin" dropdown menu</p>
 
-| ID | Test Items | Secnario | Expexted Outcome | Test Factor | Pass or Fail
+<br/>
+Test case 3:
+<p>Click on "Destination" dropdown menu</p>
+
+<br/>
+Test Case 4:
+<p>Click on "Airline" dropdown menu</p>
+
+<br/>
+Test Case 5:
+<p>Input related data and click on search button</p>
+
+<br/>
+Test Case 6
+
+| ID | Test Items | Secnario | Input | Expexted Outcome | Test Factor | Pass or Fail
 | :------- | ----: | ----: | ----: | ----: | ----: | ----: |
-|a | a| a|a |a | ? |
+| 1 | Check the connection with database | Test Case 1 | http://172.104.176.214:3000/ | Connection is established successfully | Correctness | ? |
+| 2 | Get Airports data | Test Case 2 | onClick | Display all airports on screen | Correctness|
+| 3 | Get Airports data | Test Case 3 | onClick | Display all airports on screen| Correctness|
+| 4 | Get Airlines data | Test Case 4 | onClick | Display all airlines on screen | Correctness|
+| 5 | Obtain data from user inputs | Test Case 5 | onClick | Display flight's data, graphs and charts related to the user inputs | Correctness|
 
 
 <br/>
