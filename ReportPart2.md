@@ -343,9 +343,9 @@ else { dropdown = not shown; }
 | :------- | ----: | ----: | ----: | ----: | ----: | ----: |
 | 1 | Input Origin | Test Case 1 | Chicago O'Hare International Aiport, <br /> ORD, C, c, Chi, chi | Chicago O'Hare International Aiport | Correctness |
 | 2 | Input Destination | Test Case 1 | Wendover Airport <br /> Wen, W, w, we, E, en | Wendover Airport | Correctness |
-| 3 | Input Origin & Destination | Test Case 2 | OnClick | Show all dropdown | Correctness |
+| 3 | Input Origin & Destination | Test Case 2 | OnClick | Show all dropdown | ? |
 | 4 | Input Airline | Test Case 3 | United Air Lines Inc. <br /> U, u, UA, ua  | United Air Lines Inc. | Correctness |
-| 5 | Input Airline | Test Case 4 | OnClick <br /> | Show all dropdown | Correctness |
+| 5 | Input Airline | Test Case 4 | OnClick <br /> | Show all dropdown | ? |
 
 <br />
 
