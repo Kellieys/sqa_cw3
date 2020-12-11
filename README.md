@@ -309,6 +309,19 @@ $Defect\hspace{0.1cm}Detection\hspace{0.1cm}Efficiency=\frac{NumberOfDefectsDete
 
  <h2> 2. Software Quality Activities</h2>
 
+ #### Enforcing progress adherence
+ •	Product Evaluation
+    - Flight project allows user to choose the departure airport, destination airport, departure time and date.
+    - Flight project allows user to search the airport by its short-form name and art of the name. E.g. user can search Phoenix Sky Harbor International Airport by searching Phoenix. 
+    - There is a table to show flight details and users can sort the table by Airline name.
+    - There is a delay chart for user to know the delay time and delay type.
+
+ •	Process Monitoring 
+    Testing techniques such as black box and white box testing are taking part in this session to make sure the correct steps are being implemented and the code is running in the way how it should be. 
+
+ #### Controlling changes
+ During development and maintenance phases, by applying changes to Flight project, we are changing the code but controlling the change effect, to ensure Flight project maintain its quality. 
+
  #### Measuring impact of change
  When a bug or defect is detected in the Flight project, change is required to perform the fix. The impact of change is measured to determine how significant was the change and how it affected the project. It is also required to check if the Flight project is compatabile with the new change after fixing the defects.
 
