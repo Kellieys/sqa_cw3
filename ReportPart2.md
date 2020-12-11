@@ -480,35 +480,56 @@ else { dropdown = not shown; }
 
 <br/>
 Test Case 1:
-<p>Launch website and establish connection to MariaDB</p>
-
+<p>Launch website</p>
+if (connection successful) {<br/>
+console.log("Get all airlines",body) }<br/>
+![getairlines](media/getairlines.png)
 
 <br/>
 Test Case 2:
-<p>Click on "Origin" dropdown menu</p>
+<p>Launch website</p>
+if (connection successful) {<br/>
+console.log("Get all airports",body) }<br/>
+![getairports](media/getairports.png)
 
 <br/>
 Test case 3:
-<p>Click on "Destination" dropdown menu</p>
+<p>Input search query and click on search button</p>
+if (connection successful) {<br/>
+console.log("Search button clicked",body) }<br/>
+![searchbutton](media/searchbutton.png)
+
 
 <br/>
 Test Case 4:
-<p>Click on "Airline" dropdown menu</p>
+<p>After clicking on the search button</p>
+if (connection successful) {<br/>
+console.log("Get flights stats", body) }<br/>
+![flightstats](media/getflightstats.png)
 
 <br/>
 Test Case 5:
-<p>Input related data and click on search button</p>
+<p>After clicking on the search button</p>
+if (connection successful) {<br/>
+console.log("Get airline delays", body) }<br/>
+![airlinedelays](media/getairlinedelays.png)
 
 <br/>
-Test Case 6
+Test Case 6:
+<p>After clicking on the search button</p>
+if (connection successful) {<br/>
+console.log("Get airline delays", body) }<br/>
+![airlinedelays](media/getdelaycomparison.png)
+
 
 | ID | Test Items | Secnario | Input | Expexted Outcome | Test Factor | Pass or Fail
 | :------- | ----: | ----: | ----: | ----: | ----: | ----: |
-| 1 | Check the connection with database | Test Case 1 | http://172.104.176.214:3000/ | Connection is established successfully | Correctness | ? |
-| 2 | Get Airports data | Test Case 2 | onClick | Display all airports on screen | Correctness|
-| 3 | Get Airports data | Test Case 3 | onClick | Display all airports on screen| Correctness|
-| 4 | Get Airlines data | Test Case 4 | onClick | Display all airlines on screen | Correctness|
-| 5 | Obtain data from user inputs | Test Case 5 | onClick | Display flight's data, graphs and charts related to the user inputs | Correctness|
+| 1 | Check the connection with database(Airports' data) | Test Case 1 | http://172.104.176.214:3000/ | Console log "Get all airports" and all airports | Correctness | ? |
+| 2 | Check the connection with database(Airlines' data) | Test Case 2 | http://172.104.176.214:3000/ | Console log "Get all airlines" and all airlines | Correctness|
+| 3 | Obtain user inputs | Test Case 3 | onClick | Console log "Search button clicked" and all user inputs| Correctness|
+| 4 | Get Flights' stats | Test Case 4 | onClick | Console log "Get flights stats" and all related flights' stats| Correctness|
+| 5 | Get airline delays | Test Case 5 | onClick | Console log "Get airline delays" and all related airline delays | Correctness|
+| 6 | Get delays comparison | Test Case 6 | onClick | Console log "Get delays comparison" and all related delays comparison | Correctness|
 
 
 <br/>
