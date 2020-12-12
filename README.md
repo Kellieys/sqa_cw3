@@ -309,8 +309,10 @@ $Defect\hspace{0.1cm}Detection\hspace{0.1cm}Efficiency=\frac{NumberOfDefectsDete
 
  <h2> 2. Software Quality Activities</h2>
 
- #### Enforcing progress adherence
- •	Product Evaluation
+</div>
+
+ <h3> Enforcing progress adherence </h3>
+ <p>•	Product Evaluation
     - Flight project allows user to choose the departure airport, destination airport, departure time and date.
     - Flight project allows user to search the airport by its short-form name and art of the name. E.g. user can search Phoenix Sky Harbor International Airport by searching Phoenix. 
     - There is a table to show flight details and users can sort the table by Airline name.
@@ -319,20 +321,36 @@ $Defect\hspace{0.1cm}Detection\hspace{0.1cm}Efficiency=\frac{NumberOfDefectsDete
  •	Process Monitoring 
     Testing techniques such as black box and white box testing are taking part in this session to make sure the correct steps are being implemented and the code is running in the way how it should be. 
 
- #### Controlling changes
- During development and maintenance phases, by applying changes to Flight project, we are changing the code but controlling the change effect, to ensure Flight project maintain its quality. 
+ </p>
+ </br>
 
- #### Measuring impact of change
- When a bug or defect is detected in the Flight project, change is required to perform the fix. The impact of change is measured to determine how significant was the change and how it affected the project. It is also required to check if the Flight project is compatabile with the new change after fixing the defects.
+ <h3> Controlling changes</h3>
 
- #### Performing QA audits
- Performing SQA audits ensures that the Flight project adheres to the defined standards and procedures. It also makes sure that the requirements of the Flight project are met. If the quality standards or the requirements are not met, it will be reflected to the development team to make changes accordingly.
+ <p>During development and maintenance phases, by applying changes to Flight project, we are changing the code but controlling the change effect, to ensure Flight project maintain its quality. 
 
- #### Keeping records and reporting
- Keeping records and reporting ensures that the Flight project has all the necessary documents for future reference, and the documents recorded are also shared with the stakeholders. The documents are also extremely useful in case something went wrong in the Flight project, the development team can look at the documentation and figure out what is the problem. 
+ </p>
+ </br>
 
-</div>
-<br/>
+ <h3> Measuring impact of change </h3>
+
+ <p>When a bug or defect is detected in the Flight project, change is required to perform the fix. The impact of change is measured to determine how significant was the change and how it affected the project. It is also required to check if the Flight project is compatabile with the new change after fixing the defects.
+
+</p>
+</br>
+
+ <h3> Performing QA audits </h3>
+
+ <p>Performing SQA audits ensures that the Flight project adheres to the defined standards and procedures. It also makes sure that the requirements of the Flight project are met. If the quality standards or the requirements are not met, it will be reflected to the development team to make changes accordingly.
+
+</p>
+</br>
+
+ <h3> Keeping records and reporting </h3>
+
+ <p>Keeping records and reporting ensures that the Flight project has all the necessary documents for future reference, and the documents recorded are also shared with the stakeholders. The documents are also extremely useful in case something went wrong in the Flight project, the development team can look at the documentation and figure out what is the problem. 
+
+ </p>
+ </br>
 
 ---
 
@@ -515,11 +533,11 @@ Test Case 5:
 <br/>
 Test Case 6
 
-| ID | Test Items | Secnario | Input | Expexted Outcome | Test Factor | Pass or Fail
+| ID | Test Items | Secnario | Input | Expected Outcome | Test Factor | Pass or Fail
 | :------- | ----: | ----: | ----: | ----: | ----: | ----: |
 | 1 | Check the connection with database | Test Case 1 | http://172.104.176.214:3000/ | Connection is established successfully | Correctness | ? |
 | 2 | Get Airports data | Test Case 2 | onClick | Display all airports on screen | Correctness|
-| 3 | Get Airports data | Test Case 3 | onClick | Display all airports on screen| Correctness|
+| 3 | Get Airports data | Test Case 3 | onClick | Display all airports on screen | Correctness|
 | 4 | Get Airlines data | Test Case 4 | onClick | Display all airlines on screen | Correctness|
 | 5 | Obtain data from user inputs | Test Case 5 | onClick | Display flight's data, graphs and charts related to the user inputs | Correctness|
 
@@ -553,6 +571,12 @@ Test Case 6
 <h2> 3.x GUI Testing<h2>
 
 <br/>
+
+| ID | Mobile compatibility testing | User Experience (UX) Testing | Interface Features (UI) Testing |
+| :------- | ----: | ----: | ----: |
+| 1. | Background design and title is not synchronizing with Flight project when using Flight project on mobile phone.| Flight project is accessible in a single window not multiple window. | When user inputs all the details for the flight such as origin, destination, airlines, dates and press search button, flight data will be shown in a table form. If there is no data for current flight, it will show ‘ No Data’ in flight data section. | 
+| 2. | Width of table that shows flight details is not following the user input field. | Based on user experience, Internet connection is required for user to connect to the database and get the data from database. | In the view of flight data, there is a sorting arrow besides the title of each section on the table when we move our cursor to the title. When the arrow is pressed, it will sort the table based on the current title that we pressed. |
+| 3.| When showing the graph of delay type or delay time in mobile vertical mode, both graph is overlaying. When using flight project in mobile horizontal mode, the graph is showing fine but are not fitting in the designed box. | User may experience delay or wrong data if the network is unstable or network is slow. | User can select the flight from the table and a pie chart and bar chart will show for the user. Pie chart is showing the delay type where the bar chart is showing. |
 
 ---
 <br/>
