@@ -568,7 +568,7 @@ Test Case 6
 
 <br/>
 
-<h2> 3.x GUI Testing<h2>
+<h3> 3.x GUI Testing</h3>
 
 <br/>
 
