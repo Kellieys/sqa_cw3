@@ -311,6 +311,23 @@ $Defect\hspace{0.1cm}Detection\hspace{0.1cm}Efficiency=\frac{NumberOfDefectsDete
 
  </div>
 
+ <h3> Quality Management Plan </h3>
+
+ | Name | Role | Key Responsibility |
+ | :------- | ----: | ----: |
+ | Kelly Lim | Group Leader | Quality mentoring and Coaching |
+ | Ling Kuok Ging | Team Menber | Testing for UI and UX |
+ | Lee Ze-Cong| Team Member | Backend testing | 
+ | Raveen | Team Member | Backend testing |
+ | Yap Jun Kiat | Team Member | Testing for UI and UX |
+
+ <h4> Implementation checklist </h4>
+ <p> - Flight project has meet our requirement. </br>
+     - Testing strategies are being used in this project to make sure project meet the requirement. </br>
+     - Maintaining jobs are divided to all group members. </br>
+ </p>    
+ </br>
+
  <h3> Enforcing progress adherence </h3>
  <p>•	Product Evaluation
     - Flight project allows user to choose the departure airport, destination airport, departure time and date.
@@ -590,20 +607,35 @@ console.log("Get airline delays", body) }<br/>
 
 <br/>
 
-<h3> 3.x GUI Testing</h3>
+<h3> 3.3 GUI Testing</h3>
 
 <br/>
 
 
 | ID | Mobile compatibility testing | User Experience (UX) Testing | Interface Features (UI) Testing |
 | :------- | ----: | ----: | ----: |
-| 1. | Background design and title is not synchronizing with Flight project when using Flight project on mobile phone.| Flight project is accessible in a single window not multiple window. | When user inputs all the details for the flight such as origin, destination, airlines, dates and press search button, flight data will be shown in a table form. If there is no data for current flight, it will show ‘ No Data’ in flight data section. | 
+| 1. | Background design and title is not synchronizing with Flight project data input section when using Flight project on mobile phone. (1) | Flight project is accessible in a single window not multiple window. | When user inputs all the details for the flight such as origin, destination, airlines, dates and press search button, flight data will be shown in a table form. If there is no data for current flight, it will show ‘ No Data’ in flight data section. | 
 | 2. | Width of table that shows flight details is not following the user input field. | Based on user experience, Internet connection is required for user to connect to the database and get the data from database. | In the view of flight data, there is a sorting arrow besides the title of each section on the table when we move our cursor to the title. When the arrow is pressed, it will sort the table based on the current title that we pressed. |
-| 3.| When showing the graph of delay type or delay time in mobile vertical mode, both graph is overlaying. When using flight project in mobile horizontal mode, the graph is showing fine but are not fitting in the designed box. | User may experience delay or wrong data if the network is unstable or network is slow. | User can select the flight from the table and a pie chart and bar chart will show for the user. Pie chart is showing the delay type where the bar chart is showing. |
-
+| 3.| When showing the graph of delay type or delay time in mobile vertical mode, both graph is overlaying. When using flight project in mobile horizontal mode, the graph is showing fine but are not fitting in the designed box. (2) | User may experience delay or wrong data if the network is unstable or network is slow. | User can select the flight from the table and a pie chart and bar chart will show for the user. Pie chart is showing the delay type where the bar chart is showing. |
 
 ---
 <br/>
+<p align="center">
+  <img src="Pic 1.jpg" />
+</p>
+</br>
+<p> Diagram 1: Data input section is not align with the background. </p>
+
+</br>
+<p align="center">
+  <img src="Pic 2.jpg" />
+</p>
+</br>
+<p> Diagram 2: Flight Project when using mobile in horizontal mode. </p>
+
+</br>
+
+
 
 ## Appendix
 
