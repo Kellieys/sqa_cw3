@@ -323,8 +323,9 @@ $Defect\hspace{0.1cm}Detection\hspace{0.1cm}Efficiency=\frac{NumberOfDefectsDete
 
  <h4> Implementation checklist </h4>
 
- | :------- | ----: |
+
  | Has the software meet our requirement? | True |
+ | :------- | ----: |
  | Are test unit being used in the code ? | True |
  | Has the maintaining jobs being divided to all the members ? | True |
  | Has mobile been tested | True |
