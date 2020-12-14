@@ -635,11 +635,11 @@ console.log("Get airline delays", body) }<br/>
 <br/>
 
 
-| ID | Mobile compatibility testing | User Experience (UX) Testing | Interface Features (UI) Testing |
-| :------- | ----: | ----: | ----: |
-| 1. | Background design and title is not synchronizing with Flight project data input section when using Flight project on mobile phone. (1) | Flight project is accessible in a single window not multiple window. | When user inputs all the details for the flight such as origin, destination, airlines, dates and press search button, flight data will be shown in a table form. If there is no data for current flight, it will show ‘ No Data’ in flight data section. | 
-| 2. | Width of table that shows flight details is not following the user input field. | Based on user experience, Internet connection is required for user to connect to the database and get the data from database. | In the view of flight data, there is a sorting arrow besides the title of each section on the table when we move our cursor to the title. When the arrow is pressed, it will sort the table based on the current title that we pressed. |
-| 3.| When showing the graph of delay type or delay time in mobile vertical mode, both graph is overlaying. When using flight project in mobile horizontal mode, the graph is showing fine but are not fitting in the designed box. (2) | User may experience delay or wrong data if the network is unstable or network is slow. | User can select the flight from the table and a pie chart and bar chart will show for the user. Pie chart is showing the delay type where the bar chart is showing. |
+| ID | Mobile compatibility testing |
+| :------- | ----: |
+| 1. | Background design and title is not synchronizing with Flight project data input section when using Flight project on mobile phone. (1) |
+| 2. | Width of table that shows flight details is not following the user input field. |
+| 3.| When showing the graph of delay type or delay time in mobile vertical mode, both graph is overlaying. When using flight project in mobile horizontal mode, the graph is showing fine but are not fitting in the designed box. (2) |
 
 ---
 <br/>
@@ -658,6 +658,58 @@ console.log("Get airline delays", body) }<br/>
 
 </br>
 
+<h4> User Experience Testing (UX) </h4>
+</br>
+<h5> Test Case 1 </h5>
+<p> Flight project is a single page webpage, not multiple page webpage. </p>
+</br>
+
+<h5> Test case 2 </h5>
+<p> Network Connection is required to use the webpage. </p>
+</br>
+
+<h5> Test case 3 </h5>
+<p> Data will be dalay or rong if network connection is unstable or poor.  </p>
+</br>
+
+| ID | Test Item | Scenarios | Input | Expected Output | Test Factor | True or False |
+| :------- | ----: | ----: | ----: | ----: | ----: | ----: |
+| 1 | Flight project is a single page webpage, not multiple page webpage. | Test case 1 | On View | User doesn't required few webpage to run FLight Project. | Usability | True |
+| 2 | Network Connection is required to use the webpage. | Test case 2 | On View | When there's no Internet connection, Flight Project can't be run. | Integrity | True |  
+| 3 | Data will be dalay or wrong if network connection is unstable or poor. | Test case 3 | On View | When network is poor, the delay chart will show the wrong data with the airline. | Usability | True | 
+</br>
+
+<h4> Interface Featurea Testing (GUI) </h4>
+</br>
+<h5> Test Case 1 </h5>
+<p> View Search button alignment with different screen sizes. </p>
+</br>
+
+<h5> Test case 2 </h5>
+<p> Click arrow button to sort the table based on the title. </p>
+</br>
+
+<h5> Test case 3 </h5>
+<p> Text and images resize accordingly when user resize browser. </p>
+</br>
+
+<h5> Test case 4 </h5>
+<p> Select same origin and destination. </p>
+</br>
+ 
+<h5> Test case 5 </h5>
+<p> Hover on Pie or bar chart to view the data in a small box.  </p>
+</br>
+
+| ID | Test Item | Scenarios | Input | Expected Output | Test Factor | Pass or Fail |
+| :------- | ----: | ----: | ----: | ----: | ----: | ----: |
+| 1 | Search button alignment on screen resizing | Test case 1 | On View | On resize, the search button aligns accordingly | Correctness | Pass |
+| 2 | Click arrow button to sort | Test case 2 | On Click | The data of flights on table, appear in that particular sorting order | Correctness | Pass |  
+| 3 | Text and image size with various  window sizes | Test case 3 | On View | On changing screen size, text and images changes size accordingly | Correctness | Pass | 
+| 4 | Select same destination as origin | Test case 4 | On Click | Error message should pop-up | Correctness | Pass |
+| 5 | Hover mouse over pie chart | Test case 5 | On View | On hovering mouse, the data should display accordingly| Pass |
+
+</br>
 
 
 ## Appendix
