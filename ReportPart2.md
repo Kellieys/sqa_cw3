@@ -674,7 +674,7 @@ console.log("Get airline delays", body) }<br/>
 
 | ID | Test Item | Scenarios | Input | Expected Output | Test Factor | True or False |
 | :------- | ----: | ----: | ----: | ----: | ----: | ----: |
-| 1 | Flight project is a single page webpage, not multiple page webpage. | Test case 1 | On View | User doesn't required few webpage to run FLight Project. | Usability | True |
+| 1 | Flight project is a single page webpage, not multiple page webpage. | Test case 1 | On View | User doesn't required few webpage to run Flight Project. | Usability | True |
 | 2 | Network Connection is required to use the webpage. | Test case 2 | On View | When there's no Internet connection, Flight Project can't be run. | Integrity | True |  
 | 3 | Data will be dalay or wrong if network connection is unstable or poor. | Test case 3 | On View | When network is poor, the delay chart will show the wrong data with the airline. | Usability | True | 
 </br>
@@ -707,7 +707,7 @@ console.log("Get airline delays", body) }<br/>
 | 2 | Click arrow button to sort | Test case 2 | On Click | The data of flights on table, appear in that particular sorting order | Correctness | Pass |  
 | 3 | Text and image size with various  window sizes | Test case 3 | On View | On changing screen size, text and images changes size accordingly | Correctness | Pass | 
 | 4 | Select same destination as origin | Test case 4 | On Click | Error message should pop-up | Correctness | Pass |
-| 5 | Hover mouse over pie chart | Test case 5 | On View | On hovering mouse, the data should display accordingly| Pass |
+| 5 | Hover mouse over pie chart | Test case 5 | On View | On hovering mouse, the data should display accordingly| Correctness | Pass | 
 
 </br>
 
