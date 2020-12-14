@@ -322,10 +322,30 @@ $Defect\hspace{0.1cm}Detection\hspace{0.1cm}Efficiency=\frac{NumberOfDefectsDete
  | Yap Jun Kiat | Team Member | Testing for UI and UX |
 
  <h4> Implementation checklist </h4>
- <p> - Flight project has meet our requirement. </br>
-     - Testing strategies are being used in this project to make sure project meet the requirement. </br>
-     - Maintaining jobs are divided to all group members. </br>
- </p>    
+
+ | Has the software meet our requirement? | True |
+ | Are test unit being used in the code ? | True |
+ | Has the maintaining jobs being divided to all the members ? | True |
+ | Has mobile been tested | True |
+
+
+ </br> 
+
+ <h4>Project Quality Measurement</h4>
+
+ | Key Measurement | Description |
+ | :------- | ----: |
+ | Product Issues | Database has too many data and slow down searching efficiency. |
+ | Performance | Flight project should show details data when user input data and search. |
+
+ </br>
+ <h3> Conducting formal and informal review and inspection </h3>
+ <h4> Formal Review </h4>
+ <p>The main purpose of formal review is to gain consensus and detect possible defects in Flight Project. Flights project should meet the functional and non-functional requirement which is display analytics which is based on users’ input of flight origin, destination, airline, date, and time. Also, Flight project also shall display error messages if the required fields are empty. Based on our previous testing, there is no error in current state. </p>
+
+ </br>
+ <h4> Inspection </h4>
+ <p> There is a possible defect may be found in Flight Project which is database can’t connect to Flight Project. </p>
  </br>
 
  <h3> Enforcing progress adherence </h3>
