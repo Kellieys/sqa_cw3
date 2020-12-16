@@ -322,9 +322,9 @@ This number is calculated using the Halstead-delivered bug score.
 ### Software Testing Strategies and Planning
 
 ### 3.1 Unit Testing
+### 3.1.1 Functional and Structure (White Box)
 
-#### The unit testing concerns with the correctness of individual function and module. In this flight project the unit testing will focuses on three levels:
-<br />
+<h4> The unit testing concerns with the correctness of individual function and module. In this flight project the unit testing will focuses on three levels:</h4>
 
 #### Input functions:
 * Origin
@@ -395,15 +395,13 @@ else { dropdown = not shown; }
 </div>
 
 
-<br />
-
-| ID | Test Items | Secnario | Input | Expexted Output | Test Factor | 
+| ID | Test Items | Secnario | Input | Expexted Output | Test Factor | Passs or Fail |
 | :------- | ----: | ----: | ----: | ----: | ----: | ----: |
-| 1 | Input Origin | Test Case 1 | Chicago O'Hare International Aiport, <br /> ORD, C, c, Chi, chi | Chicago O'Hare International Aiport | Correctness |
-| 2 | Input Destination | Test Case 1 | Wendover Airport <br /> Wen, W, w, we, E, en | Wendover Airport | Correctness |
-| 3 | Input Origin & Destination | Test Case 2 | OnClick | Show all dropdown | ? |
-| 4 | Input Airline | Test Case 3 | United Air Lines Inc. <br /> U, u, UA, ua  | United Air Lines Inc. | Correctness |
-| 5 | Input Airline | Test Case 4 | OnClick <br /> | Show all dropdown | ? |
+| 1 | Input Origin | Test Case 1 | Chicago O'Hare International Aiport,  ORD, C, c, Chi, chi | Chicago O'Hare International Aiport | Correctness | |
+| 2 | Input Destination | Test Case 1 | Wendover Airport, Wen, W, w, we, E, en | Wendover Airport | Correctness | |
+| 3 | Input Origin & Destination | Test Case 2 | OnClick | Show all dropdown | ? | |
+| 4 | Input Airline | Test Case 3 | United Air Lines Inc. U, u, UA, ua  | United Air Lines Inc. | Correctness | |
+| 5 | Input Airline | Test Case 4 | OnClick | Show all dropdown | ? | |
 
 <br />
 
