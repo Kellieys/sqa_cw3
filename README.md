@@ -317,32 +317,23 @@ This number is calculated using the Halstead-delivered bug score.
 </div>
 <br/>
 
-<h3> 3.1 Testing objectives </h3>
-
-<p> 
-Testing is an impotant quality control activity. this is to detect and fix defects. The main objectives are to identify and reveal errors or defects and ensure its correctness, completeness of the software and conforming to the requirements.  
-</P>
-
-<br />
-
-<h3> 3.1 Overview of Process</h3>
+### Testing objectives 
+#### Testing is an impotant quality control activity. this is to detect and fix defects. The main objectives are to identify and reveal errors or defects and ensure its correctness, completeness of the software and conforming to the requirements.  
 
 <div align="center">
  <br />
   <img src="media/overviewprocess.png" />
-    <h4>Figure 3.1 Flow diagram for process overview </h4>
+    <h4>Figure 3.1: Flow diagram for process overview </h4>
 
 </div>
 
  <br />
 
-<h3>3.2 Software Testing Strategies and Planning</h3>
+### Software Testing Strategies and Planning
 
-<h4> 3.2.1 For Entity and Size </h4>
-<h4> 3.2.1.1 Unit Testing </h4>
+### 3.1 Unit Testing
 
 #### The unit testing concerns with the correctness of individual function and module. In this flight project the unit testing will focuses on three levels:
-
 <br />
 
 #### Input functions:
@@ -354,11 +345,7 @@ Testing is an impotant quality control activity. this is to detect and fix defec
 * Month
 * Day 
 
-<br />
-
-<h4> 3.2.1.2 Testing Design </h4>
-<br />
-
+#### 3.1.2 Testing Design
 Test Case 1: <br />
 <p>* where x = all IATA code or airport names in database</p>
 
@@ -447,21 +434,10 @@ else { dropdown = not shown; }
 
 <br />
 
+---
 
-
-#### API functions:
-* Caluclations
-* Retrieving from Database
-
-<br />
-
-
-
-
-
-<br />
-
-<h4> 3.1.2 Integration Testing</h4>
+### 3.2 Integration Testing 
+#### 3.2.1 Size & Entity (White Box)
 
 <br/>
 Test Case 1:
@@ -498,29 +474,8 @@ Test Case 6
 
 <br/>
 
-<h4> 3.1.3 System Testing</h4>
-
-<br />
-
-| ID | Test Items | Secnario | Expexted Outcome | Test Factor | Pass or Fail
-| :------- | ----: | ----: | ----: | ----: | ----: | ----: |
-|a | a| a|a |a | ? |
-
-
-<h3> 3.2 For structure & function </h3>
-
-<h4> 3.2.1 Black Box </h4>
-<p>• Equivalent Class Partitioning.
-• Boundary Values Analysis.</P>
-
-
-<h4> 3.2.2 White Box </h4>
-<p>Testing coverage (line, path…)</p>
-
-
-<br/>
-
-<h3> 3.3 GUI Testing</h3>
+### 3.3 GUI Testing (System Testing)
+#### This section will use black box testing to test the system as a whole. The test is is design according to the functional and non-functional requirements that are listed in the appendix section.
 
 <br/>
 
@@ -539,32 +494,31 @@ Test Case 6
 
 | ID | Test Item | Scenarios | Input | Expected Output | Test Factor | Pass or Fail|
 | :------- | ----: | ----: | ----: | ----: | ----: | ----: |
-| 1 | Background design should align with data input section | Test Case 1 | On View | Background design is fixed and smaller than data input section (1). | Correctness | Fail | 
-| 2 | Width of table should align with the user input section. | Test Case 2 | On View | Width of table is following the background design and not align with data input section. | Correctness | Fail | 
-| 3 | Graph of delay type and time should be shown clearly. | Test Case 3 | On View | Showing the graph of delay type or delay time in mobile vertical mode, both graph is overlaying. When using flight project in mobile horizontal mode, the graph is showing fine but are not fitting in the designed box.(2) | Correctness | Fail | 
+| 1 | Background design should align with data input section | Test Case 1 | On View | Background design is fixed and smaller than data input section (1). | Correctness |  | 
+| 2 | Width of table should align with the user input section. | Test Case 2 | On View | Width of table is following the background design and not align with data input section. | Correctness |  | 
+| 3 | Graph of delay type and time should be shown clearly. | Test Case 3 | On View | Showing the graph of delay type or delay time in mobile vertical mode, both graph is overlaying. When using flight project in mobile horizontal mode, the graph is showing fine but are not fitting in the designed box.(2) | Correctness |  | 
 
 ---
 
 
-<h4> User Experience Testing (UX) </h4>
-</br>
-<h5> Test Case 1 </h5>
+####  User Experience Testing (UX) 
+<h4> Test Case 1 </h4>
 <p> Flight project is a single page webpage, not multiple page webpage. </p>
 </br>
 
-<h5> Test case 2 </h5>
+<h4> Test case 2 </h4>
 <p> Network Connection is required to use the webpage. </p>
 </br>
 
-<h5> Test case 3 </h5>
+<h4> Test case 3 </h4>
 <p> Data will be dalay or rong if network connection is unstable or poor.  </p>
 </br>
 
 | ID | Test Item | Scenarios | Input | Expected Output | Test Factor | True or False |
 | :------- | ----: | ----: | ----: | ----: | ----: | ----: |
-| 1 | Flight project is a single page webpage, not multiple page webpage. | Test case 1 | On View | User doesn't required few webpage to run Flight Project. | Usability | True |
-| 2 | Network Connection is required to use the webpage. | Test case 2 | On View | When there's no Internet connection, Flight Project can't be run. | Integrity | True |  
-| 3 | Data will be dalay or wrong if network connection is unstable or poor. | Test case 3 | On View | When network is poor, the delay chart will show the wrong data with the airline. | Usability | True | 
+| 1 | Flight project is a single page webpage, not multiple page webpage. | Test case 1 | On View | User doesn't required few webpage to run Flight Project. | Usability |  |
+| 2 | Network Connection is required to use the webpage. | Test case 2 | On View | When there's no Internet connection, Flight Project can't be run. | Integrity |  |  
+| 3 | Data will be dalay or wrong if network connection is unstable or poor. | Test case 3 | On View | When network is poor, the delay chart will show the wrong data with the airline. | Usability |  | 
 </br>
 
 <h4> Interface Featurea Testing (GUI) </h4>
@@ -591,14 +545,13 @@ Test Case 6
 
 | ID | Test Item | Scenarios | Input | Expected Output | Test Factor | Pass or Fail |
 | :------- | ----: | ----: | ----: | ----: | ----: | ----: |
-| 1 | Search button alignment on screen resizing | Test case 1 | On View | On resize, the search button aligns accordingly | Correctness | Pass |
-| 2 | Click arrow button to sort | Test case 2 | On Click | The data of flights on table, appear in that particular sorting order | Correctness | Pass |  
-| 3 | Text and image size with various  window sizes | Test case 3 | On View | On changing screen size, text and images changes size accordingly | Correctness | Pass | 
-| 4 | Select same destination as origin | Test case 4 | On Click | Error message should pop-up | Correctness | Pass |
-| 5 | Hover mouse over pie chart | Test case 5 | On View | On hovering mouse, the data should display accordingly| Correctness | Pass | 
+| 1 | Search button alignment on screen resizing | Test case 1 | On View | On resize, the search button aligns accordingly | Correctness |  |
+| 2 | Click arrow button to sort | Test case 2 | On Click | The data of flights on table, appear in that particular sorting order | Correctness |  |  
+| 3 | Text and image size with various  window sizes | Test case 3 | On View | On changing screen size, text and images changes size accordingly | Correctness |  | 
+| 4 | Select same destination as origin | Test case 4 | On Click | Error message should pop-up | Correctness |  |
+| 5 | Hover mouse over pie chart | Test case 5 | On View | On hovering mouse, the data should display accordingly| Correctness |  | 
 
-</br>
-
+---
 
 ## Appendix
 
