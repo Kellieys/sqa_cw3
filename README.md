@@ -511,11 +511,26 @@ Test Case 6
 <h3> 3.3 GUI Testing</h3>
 
 <br/>
-| ID | Mobile compatibility testing |
-| :------- | ----: |
-| 1. | Background design and title is not synchronizing with Flight project data input section when using Flight project on mobile phone. (1) |
-| 2. | Width of table that shows flight details is not following the user input field. |
-| 3.| When showing the graph of delay type or delay time in mobile vertical mode, both graph is overlaying. When using flight project in mobile horizontal mode, the graph is showing fine but are not fitting in the designed box. (2) |
+
+<h4> Mobile Compatibility testing </h4>
+<h5> Test Case 1 </h5>
+<p> Background design should align with data input section. </p>
+</br>
+
+<h5> Test case 2 </h5>
+<p> Width of table should align with the user input section. </p>
+</br>
+
+<h5> Test case 3 </h5>
+<p> Graph of delay type and time should be shown clearly.  </p>
+</br>
+
+| ID | Test Item | Scenarios | Input | Expected Output | Test Factor | Pass or Fail|
+| :------- | ----: | ----: | ----: | ----: | ----: | ----: |
+| 1 | Background design should align with data input section | Test Case 1 | On View | Background design is fixed and smaller than data input section (1). | Correctness | Fail | 
+| 2 | Width of table should align with the user input section. | Test Case 2 | On View | Width of table is following the background design and not align with data input section. | Correctness | Fail | 
+| 3 | Graph of delay type and time should be shown clearly. | Test Case 3 | On View | Showing the graph of delay type or delay time in mobile vertical mode, both graph is overlaying. When using flight project in mobile horizontal mode, the graph is showing fine but are not fitting in the designed box.(2) | Correctness | Fail | 
+
 ---
 <br/>
 <p align="center">
