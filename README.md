@@ -347,7 +347,6 @@ else { dropdown = empty; }
 
 </div>
 
-<br />
 
 <h4> Test Case 2 </h4>
 <p>* where z = Click on input field</p>
@@ -363,7 +362,6 @@ else { dropdown = not shown; }
 
 </div>
 
-<br />
 
 <h4> Test Case 3 </h4>
 <p>* where x = all IATA code or airline names in database</p>
@@ -377,7 +375,6 @@ else { dropdown = empty; }
 
 </div>
 
-<br />
 
 <h4> Test Case 4 </h4>
 <p>* where z = Click on input field</p>
@@ -392,7 +389,7 @@ if ( z = y ) {
 else { dropdown = not shown; }
 
 </div>
-
+ <br/>
 
 | ID | Test Items | Secnario | Input | Expexted Output | Test Factor | Passs or Fail |
 | :------- | ----: | ----: | ----: | ----: | ----: | ----: |
