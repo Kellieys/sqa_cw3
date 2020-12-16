@@ -475,7 +475,7 @@ else { dropdown = not shown; }
 | :------- | ----: | ----: | ----: | ----: | ----: | ----: |
 | 1 | Background design should align with data input section | Test Case 1 | On View | Background design is fixed and smaller than data input section (1). | Correctness |  | 
 | 2 | Width of table should align with the user input section. | Test Case 2 | On View | Width of table is following the background design and not align with data input section. | Correctness |  | 
-| 3 | Graph of delay type and time should be shown clearly. | Test Case 3 | On View | Showing the graph of delay type or delay time in mobile vertical mode, both graph is overlaying. When using flight project in mobile horizontal mode, the graph is showing fine but are not fitting in the designed box.(2) | Correctness |  | 
+| 3 | Graph of delay type and time should be shown clearly. | Test Case 3 | On View | Showing the graph of delay type or delay time in mobile vertical mode, both graph is overlaying. When using flight project in mobile horizontal mode, the graph is showing fine but are not fitting in the designed box.(2) | Usability |  | 
 
 ---
 
@@ -489,14 +489,18 @@ else { dropdown = not shown; }
 
 <h4> Test case 3 </h4>
 <p> Data will be dalay or rong if network connection is unstable or poor.  </p>
+
+<h4> Test case 4 </h4>
+<p> Database need to be connected to show data. </p>
+
 </br>
 
 | ID | Test Item | Scenarios | Input | Expected Output | Test Factor | True or False |
 | :------- | ----: | ----: | ----: | ----: | ----: | ----: |
 | 1 | Flight project is a single page webpage, not multiple page webpage. | Test case 1 | On View | User doesn't required few webpage to run Flight Project. | Usability |  |
-| 2 | Network Connection is required to use the webpage. | Test case 2 | On View | When there's no Internet connection, Flight Project can't be run. | Integrity |  |  
-| 3 | Data will be dalay or wrong if network connection is unstable or poor. | Test case 3 | On View | When network is poor, the delay chart will show the wrong data with the airline. | Usability |  | 
-
+| 2 | Network Connection is required to use the webpage. | Test case 2 | On View | When there's no Internet connection, Flight Project can't be run. | Portability |  |  
+| 3 | Data will be dalay or wrong if network connection is unstable or poor. | Test case 3 | On View | When network is poor, the delay chart will show the wrong data with the airline. | Reliability |  | 
+| 4 | Database need to be connected for Flight project to show the data | Test case 4 | On View | When database is not connected, Flight project will unable to show any data when user choose the dropdown section. | Maintainability |  |
 </br>
 
 <h4> Flight Web Interface Testing (GUI) </h4>
@@ -524,6 +528,7 @@ else { dropdown = not shown; }
 | 3 | Text and image size with various  window sizes | Test case 3 | On View | On changing screen size, text and images changes size accordingly | Correctness |  | 
 | 4 | Select same destination as origin | Test case 4 | On Click | Error message should pop-up | Correctness |  |
 | 5 | Hover mouse over pie chart | Test case 5 | On View | On hovering mouse, the data should display accordingly| Correctness |  | 
+| 6 | A table should be generated for flight details when search button is pressed | Test case 5 | On Click | Data will show accurately if data is available and destination is different from origin. | Usability |  |
 
 ---
 
