@@ -482,11 +482,9 @@ Test Case 6
 <h4> Mobile Compatibility testing </h4>
 <h5> Test Case 1 </h5>
 <p> Background design should align with data input section. </p>
-</br>
 
 <h5> Test case 2 </h5>
 <p> Width of table should align with the user input section. </p>
-</br>
 
 <h5> Test case 3 </h5>
 <p> Graph of delay type and time should be shown clearly.  </p>
@@ -504,11 +502,9 @@ Test Case 6
 ####  User Experience Testing (UX) 
 <h4> Test Case 1 </h4>
 <p> Flight project is a single page webpage, not multiple page webpage. </p>
-</br>
 
 <h4> Test case 2 </h4>
 <p> Network Connection is required to use the webpage. </p>
-</br>
 
 <h4> Test case 3 </h4>
 <p> Data will be dalay or rong if network connection is unstable or poor.  </p>
@@ -519,25 +515,23 @@ Test Case 6
 | 1 | Flight project is a single page webpage, not multiple page webpage. | Test case 1 | On View | User doesn't required few webpage to run Flight Project. | Usability |  |
 | 2 | Network Connection is required to use the webpage. | Test case 2 | On View | When there's no Internet connection, Flight Project can't be run. | Integrity |  |  
 | 3 | Data will be dalay or wrong if network connection is unstable or poor. | Test case 3 | On View | When network is poor, the delay chart will show the wrong data with the airline. | Usability |  | 
+
 </br>
 
 <h4> Interface Featurea Testing (GUI) </h4>
 </br>
 <h5> Test Case 1 </h5>
 <p> View Search button alignment with different screen sizes. </p>
-</br>
 
 <h5> Test case 2 </h5>
 <p> Click arrow button to sort the table based on the title. </p>
-</br>
 
 <h5> Test case 3 </h5>
 <p> Text and images resize accordingly when user resize browser. </p>
-</br>
+
 
 <h5> Test case 4 </h5>
 <p> Select same origin and destination. </p>
-</br>
  
 <h5> Test case 5 </h5>
 <p> Hover on Pie or bar chart to view the data in a small box.  </p>
