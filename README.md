@@ -249,6 +249,11 @@ This number is calculated using the Halstead-delivered bug score.
 
  </br> 
 
+<div align="center">
+   <h3>Activities Descriptions</h3>
+   <br />
+</div>
+
  <div align="center">
   <img src="media/SQA.png" />
   <h4>Figure 2.1: Software Quality Activities </h4>
@@ -256,16 +261,10 @@ This number is calculated using the Halstead-delivered bug score.
 <br />
 
 
- </br>
- <h3> Conducting formal and informal review and inspection </h3>
- <h4> Formal Review </h4>
- <p>The main purpose of formal review is to gain consensus and detect possible defects in Flight Project. Flights project should meet the functional and non-functional requirement which is display analytics which is based on users’ input of flight origin, destination, airline, date, and time. Also, Flight project also shall display error messages if the required fields are empty. Based on our previous testing, there is no error in current state. </p>
+ <h3> 2.1 Conducting formal and informal review and inspection</h3>
+ <p>The main purpose of formal review is to gain consensus and detect possible defects in Flight Project. Flights project should meet the functional and non-functional requirements, such as display analytics and infromation based on input. Besides, Flight project also shall display error messages if the required fields are empty. </p>
 
- </br>
- <h4> Inspection </h4>
- <p> There is a possible defect may be found in Flight Project which is database can’t connect to Flight Project. </p>
- </br>
-
+</br>
  <h3> Enforcing progress adherence </h3>
  <p>•	Product Evaluation
     - Flight project allows user to choose the departure airport, destination airport, departure time and date.
@@ -330,7 +329,7 @@ Testing is an impotant quality control activity. this is to detect and fix defec
 
 <div align="center">
  <br />
-  <img src="overviewprocess.png" />
+  <img src="media/overviewprocess.png" />
     <h4>Figure 3.1 Flow diagram for process overview </h4>
 
 </div>
@@ -500,8 +499,6 @@ Test Case 6
 <br/>
 
 <h4> 3.1.3 System Testing</h4>
-<p>testplan</p>
-
 
 <br />
 
@@ -547,21 +544,7 @@ Test Case 6
 | 3 | Graph of delay type and time should be shown clearly. | Test Case 3 | On View | Showing the graph of delay type or delay time in mobile vertical mode, both graph is overlaying. When using flight project in mobile horizontal mode, the graph is showing fine but are not fitting in the designed box.(2) | Correctness | Fail | 
 
 ---
-<br/>
-<p align="center">
-  <img src="media/gui1.jpg" />
-</p>
-</br>
-<p> Diagram 1: Data input section is not align with the background. </p>
 
-</br>
-<p align="center">
-  <img src="media/gui2.jpg" />
-</p>
-</br>
-<p> Diagram 2: Flight Project when using mobile in horizontal mode. </p>
-
-</br>
 
 <h4> User Experience Testing (UX) </h4>
 </br>
