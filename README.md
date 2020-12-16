@@ -434,19 +434,15 @@ Test Case 1:
 <p>Launch website and establish connection to MariaDB</p>
 
 
-<br/>
 Test Case 2:
 <p>Click on "Origin" dropdown menu</p>
 
-<br/>
 Test case 3:
 <p>Click on "Destination" dropdown menu</p>
 
-<br/>
 Test Case 4:
 <p>Click on "Airline" dropdown menu</p>
 
-<br/>
 Test Case 5:
 <p>Input related data and click on search button</p>
 
