@@ -335,7 +335,7 @@ This number is calculated using the Halstead-delivered bug score.
 * Month
 * Day 
 
-Test Case 1: <br />
+<h4> Test Case 1 </h4>
 <p>* where x = all IATA code or airport names in database</p>
 
 <div>
@@ -349,7 +349,7 @@ else { dropdown = empty; }
 
 <br />
 
-Test Case 2: <br />
+<h4> Test Case 2 </h4>
 <p>* where z = Click on input field</p>
 <p>* where y = empty input</p>
 <p>* where x = all IATA code or airport names in database</p>
@@ -365,7 +365,7 @@ else { dropdown = not shown; }
 
 <br />
 
-Test Case 3: <br />
+<h4> Test Case 3 </h4>
 <p>* where x = all IATA code or airline names in database</p>
 
 <div>
@@ -379,7 +379,7 @@ else { dropdown = empty; }
 
 <br />
 
-Test Case 4: <br />
+<h4> Test Case 4 </h4>
 <p>* where z = Click on input field</p>
 <p>* where y = empty input</p>
 <p>* where x = all IATA code or airline names in database</p>
@@ -408,14 +408,15 @@ else { dropdown = not shown; }
 * Sorting Button
 * Pie Chart and Bar Graph
 
-Test Case 1:
+<h4> Test Case 1 </h4>
 <p>Inspect className="button-search" onClick={this.executeSearch} in FlightFilter.js</p>
 
-Test Case 2:
+<h4> Test Case 2 </h4>
 <p>Inspect SortingState component in AirlinesFlightsInfo.js</p>
 
-Test Case 3:
+<h4> Test Case 3 </h4>
 <p>Inspect BarChart and PieChart component in AirlineFlightsInfo.js</p>
+</br>
 
 | ID | Test Items | Secnario | Expexted Outcome | Test Factor | Pass or Fail |
 | :------- | ----: | ----: | ----: | ----: | ----: | 
@@ -430,25 +431,25 @@ Test Case 3:
 #### 3.2.1 Size & Entity (White Box)
 <p>In this section is to inspect the API level and database level. Such as the connection and communication of API retrieing  the correct data from database according to the input </p>
 
-Test Case 1:
+<h4> Test Case 1 </h4>
 <p>Launch website and establish connection to MariaDB</p>
 
-
-Test Case 2:
+<h4> Test Case 2 </h4>
 <p>Click on "Origin" dropdown menu</p>
 
-Test case 3:
+<h4> Test Case 3 </h4>
 <p>Click on "Destination" dropdown menu</p>
 
-Test Case 4:
+<h4> Test Case 4 </h4>
 <p>Click on "Airline" dropdown menu</p>
 
-Test Case 5:
+<h4> Test Case 5 </h4>
 <p>Input related data and click on search button</p>
+</br>
 
 | ID | Test Items | Secnario | Input | Expected Outcome | Test Factor | Pass or Fail
 | :------- | ----: | ----: | ----: | ----: | ----: | ----: |
-| 1 | Check the connection with database | Test Case 1 | http://172.104.176.214:3000/ | Connection is established successfully | Correctness | ? |
+| 1 | Check the connection with database | Test Case 1 | http://172.104.176.214:3000/ | Connection is established successfully | Correctness |  |
 | 2 | Get Airports data | Test Case 2 | onClick | Display all airports on screen | Correctness|
 | 3 | Get Airports data | Test Case 3 | onClick | Display all airports on screen | Correctness|
 | 4 | Get Airlines data | Test Case 4 | onClick | Display all airlines on screen | Correctness|
@@ -463,13 +464,13 @@ Test Case 5:
 
 
 <h4> Mobile Compatibility testing </h4>
-<h5> Test Case 1 </h5>
+<h4> Test Case 1 </h4>
 <p> Background design should align with data input section. </p>
 
-<h5> Test case 2 </h5>
+<h4> Test Case 2 </h4>
 <p> Width of table should align with the user input section. </p>
 
-<h5> Test case 3 </h5>
+<h4> Test Case 3 </h4>
 <p> Graph of delay type and time should be shown clearly.  </p>
 </br>
 
@@ -503,20 +504,19 @@ Test Case 5:
 
 <h4> Flight Web Interface Testing (GUI) </h4>
 
-<h5> Test Case 1 </h5>
+<h4> Test Case 1 </h4>
 <p> View Search button alignment with different screen sizes. </p>
 
-<h5> Test case 2 </h5>
+<h4> Test Case 2 </h4>
 <p> Click arrow button to sort the table based on the title. </p>
 
-<h5> Test case 3 </h5>
+<h4> Test Case 3 </h4>
 <p> Text and images resize accordingly when user resize browser. </p>
 
-
-<h5> Test case 4 </h5>
+<h4> Test Case 4 </h4>
 <p> Select same origin and destination. </p>
  
-<h5> Test case 5 </h5>
+<h4> Test Case 5 </h4>
 <p> Hover on Pie or bar chart to view the data in a small box.  </p>
 </br>
 
