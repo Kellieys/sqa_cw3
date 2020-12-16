@@ -391,7 +391,7 @@ else { dropdown = not shown; }
 </div>
  <br/>
 
-| ID | Test Items | Secnario | Input | Expexted Output | Test Factor | Passs or Fail |
+| ID | Test Item | Scenario | Input | Expected Output | Test Factor | Pass or Fail |
 | :------- | ----: | ----: | ----: | ----: | ----: | ----: |
 | 1 | Input Origin | Test Case 1 | Chicago O'Hare International Aiport,  ORD, C, c, Chi, chi | Chicago O'Hare International Aiport | Correctness | |
 | 2 | Input Destination | Test Case 1 | Wendover Airport, Wen, W, w, we, E, en | Wendover Airport | Correctness | |
@@ -415,7 +415,7 @@ else { dropdown = not shown; }
 <p>Inspect BarChart and PieChart component in AirlineFlightsInfo.js</p>
 </br>
 
-| ID | Test Items | Secnario | Expexted Outcome | Test Factor | Pass or Fail |
+| ID | Test Item | Scenario | Expected Outcome | Test Factor | Pass or Fail |
 | :------- | ----: | ----: | ----: | ----: | ----: | 
 | 1 | Search Button's Triggers | Test Case 1 | executeSearch() function is called | Correctness |  |
 | 2 | Sorting Button Clickable | Test Case 2 | sortingSaate component is called | Correctness |  |
@@ -444,7 +444,7 @@ else { dropdown = not shown; }
 <p>Input related data and click on search button</p>
 </br>
 
-| ID | Test Items | Secnario | Input | Expected Outcome | Test Factor | Pass or Fail
+| ID | Test Item | Secnario | Input | Expected Outcome | Test Factor | Pass or Fail
 | :------- | ----: | ----: | ----: | ----: | ----: | ----: |
 | 1 | Check the connection with database | Test Case 1 | http://172.104.176.214:3000/ | Connection is established successfully | Correctness |  |
 | 2 | Get Airports data | Test Case 2 | onClick | Display all airports on screen | Correctness|
@@ -471,7 +471,7 @@ else { dropdown = not shown; }
 <p> Graph of delay type and time should be shown clearly.  </p>
 </br>
 
-| ID | Test Item | Scenarios | Input | Expected Output | Test Factor | Pass or Fail|
+| ID | Test Item | Scenario | Input | Expected Output | Test Factor | Pass or Fail|
 | :------- | ----: | ----: | ----: | ----: | ----: | ----: |
 | 1 | Background design should align with data input section | Test Case 1 | On View | Background design is fixed and smaller than data input section (1). | Correctness |  | 
 | 2 | Width of table should align with the user input section. | Test Case 2 | On View | Width of table is following the background design and not align with data input section. | Correctness |  | 
@@ -495,7 +495,7 @@ else { dropdown = not shown; }
 
 </br>
 
-| ID | Test Item | Scenarios | Input | Expected Output | Test Factor | True or False |
+| ID | Test Item | Scenario | Input | Expected Output | Test Factor | True or False |
 | :------- | ----: | ----: | ----: | ----: | ----: | ----: |
 | 1 | Flight project is a single page webpage, not multiple page webpage. | Test case 1 | On View | User doesn't required few webpage to run Flight Project. | Usability |  |
 | 2 | Network Connection is required to use the webpage. | Test case 2 | On View | When there's no Internet connection, Flight Project can't be run. | Portability |  |  
@@ -524,7 +524,7 @@ else { dropdown = not shown; }
 <p> Search button is pressed </p>
 </br>
 
-| ID | Test Item | Scenarios | Input | Expected Output | Test Factor | Pass or Fail |
+| ID | Test Item | Scenario | Input | Expected Output | Test Factor | Pass or Fail |
 | :------- | ----: | ----: | ----: | ----: | ----: | ----: |
 | 1 | Search button alignment on screen resizing | Test case 1 | On View | On resize, the search button aligns accordingly | Correctness |  |
 | 2 | Click arrow button to sort | Test case 2 | On Click | The data of flights on table, appear in that particular sorting order | Correctness |  |  
