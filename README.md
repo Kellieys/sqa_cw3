@@ -62,10 +62,10 @@ Where operator could be the storage class specifiers (i.e. static, auto, etc.), 
 
 The token is counted as: 
 
-- $n_1$ - number of unique operators
-- $n_2$ - number of unique operands
-- $N_1$ - total number of operators
-- $N_2$ - total number of operands
+- ![n1](media/n1.png) - number of unique operators
+- ![n2](media/n2.png) - number of unique operands
+- ![N1](media/n_1.png) - total number of operators
+- ![N2](media/n_2.png) - total number of operands
 
 Following are Halstead metrics that are derived from these quantities with brief description and fixed formulas: 
 
@@ -73,48 +73,49 @@ Following are Halstead metrics that are derived from these quantities with brief
 
 The program length measures the sum of the total number of operators and operands.
 
-${\displaystyle N=N_{1}+N_{2}\,}$
+![ProgramLength](media/N.png)
 
 **Vocabulary Size ($n$)**
 
 The vocabulary size measures the sum of the total number of unique operators and operands. 
 
-${\displaystyle \eta =\eta _{1}+\eta _{2}\,}$
+![VocabSize](media/mu.png)
 
 **Program Volume ($V$)**
 
 The program volume measures the size of the implementation of an algorithm. It focuses more on the number of operations performed and operands handled in the algorithm, making it less sensitive to code layout. 
 
-${\displaystyle V=N\times \log _{2}\eta }$
+![Volume](media/V.png)
 
 **Difficulty Level ($D$)**
 
 The difficulty level measures the error proneness of the program. It is proportional to the number of unique operators and also between total number of operands and the number of unique operands. 
 
-${\displaystyle D={\eta *{1} \over 2}\times {N*{2} \over \eta _{2}}}$
+![Difficulty](media/D.png)
 
 **Program Level ($L$)**
 
 The program level measures the opposite or inverse of error proneness. 
 
-$L = {1 \over D}$
+![Level](media/L.png)
 
 **Effort to implement ($E$)**
 The 'effort to implement' metric measures the effort required to understand the program. It is proportional to the volume($V$) and difficulty level($D$) of the program. 
 
-$E = {V \times D}$
+![Effort](media/E.png)
 
 **Time to implement ($T$)**
 
 The 'time to implement' metric measures the approximate of time to implemented the program. It is proportional to effort ($E$).
 
-${\displaystyle T={E \over 18}}seconds $
+![Time](media/T.png)
 
 **Number of delivered bugs ($B$)**
 
 The 'number of delivered bugs' metric measures approximate number of errors in implementation and the overall complexity of the software. 
 
-${\displaystyle B={E^{2 \over 3} \over 3000}}$ OR ${\displaystyle B={V \over 3000}}$
+![Bugs](media/B.png)
+
 </br>
 ### Plato
 
