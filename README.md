@@ -264,7 +264,6 @@ This number is calculated using the Halstead-delivered bug score.
  <h3> 2.1 Conducting formal and informal review and inspection</h3>
  <p>The main purpose of formal review is to gain consensus and detect possible defects in Flight Project. Flights project should meet the functional and non-functional requirements, such as display analytics and infromation based on input. Besides, Flight project also shall display error messages if the required fields are empty. </p>
 
-</br>
  <h3> Enforcing progress adherence </h3>
  <p>•	Product Evaluation
     - Flight project allows user to choose the departure airport, destination airport, departure time and date.
@@ -276,35 +275,26 @@ This number is calculated using the Halstead-delivered bug score.
     Testing techniques such as black box and white box testing are taking part in this session to make sure the correct steps are being implemented and the code is running in the way how it should be. 
 
  </p>
- </br>
 
  <h3> Controlling changes</h3>
 
  <p>During development and maintenance phases, by applying changes to Flight project, we are changing the code but controlling the change effect, to ensure Flight project maintain its quality. 
-
  </p>
- </br>
 
  <h3> Measuring impact of change </h3>
 
  <p>When a bug or defect is detected in the Flight project, change is required to perform the fix. The impact of change is measured to determine how significant was the change and how it affected the project. It is also required to check if the Flight project is compatabile with the new change after fixing the defects.
-
 </p>
-</br>
 
  <h3> Performing QA audits </h3>
 
  <p>Performing SQA audits ensures that the Flight project adheres to the defined standards and procedures. It also makes sure that the requirements of the Flight project are met. If the quality standards or the requirements are not met, it will be reflected to the development team to make changes accordingly.
-
 </p>
-</br>
 
  <h3> Keeping records and reporting </h3>
 
  <p>Keeping records and reporting ensures that the Flight project has all the necessary documents for future reference, and the documents recorded are also shared with the stakeholders. The documents are also extremely useful in case something went wrong in the Flight project, the development team can look at the documentation and figure out what is the problem. 
-
  </p>
- </br>
 
 ---
 
