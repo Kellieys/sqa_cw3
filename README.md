@@ -1,7 +1,7 @@
 <code>&nbsp;</code><br /><br /><br /><br />
 
 <p align="center">
-  <img src="UoNLogo.png" />
+  <img src="media/UoNLogo.png" />
 </p>
 <br />
 
@@ -634,14 +634,14 @@ Test Case 6
 ---
 <br/>
 <p align="center">
-  <img src="Pic 1.jpg" />
+  <img src="media/gui1.jpg" />
 </p>
 </br>
 <p> Diagram 1: Data input section is not align with the background. </p>
 
 </br>
 <p align="center">
-  <img src="Pic 2.jpg" />
+  <img src="media/gui2.jpg" />
 </p>
 </br>
 <p> Diagram 2: Flight Project when using mobile in horizontal mode. </p>
