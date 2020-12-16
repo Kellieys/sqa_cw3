@@ -531,7 +531,7 @@ else { dropdown = not shown; }
 | 3 | Text and image size with various  window sizes | Test case 3 | On View | On changing screen size, text and images changes size accordingly | Correctness |  | 
 | 4 | Select same destination as origin | Test case 4 | On Click | Error message should pop-up | Correctness |  |
 | 5 | Hover mouse over pie chart | Test case 5 | On View | On hovering mouse, the data should display accordingly| Correctness |  | 
-| 6 | A table should be generated for flight details when search button is pressed | Test case 5 | On Click | Data will show accurately if data is available and destination is different from origin. | Usability |  |
+| 6 | A table should be generated for flight details when search button is pressed | Test case 6 | On Click | Data will show accurately if data is available and destination is different from origin. | Usability |  |
 
 ---
 
