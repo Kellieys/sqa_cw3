@@ -322,7 +322,7 @@ This number is calculated using the Halstead-delivered bug score.
 ### Software Testing Strategies and Planning
 
 ### 3.1 Unit Testing
-### 3.1.1 Functional and Structure (White Box)
+#### 3.1.1 Functional and Structure (White Box)
 
 <h4> The unit testing concerns with the correctness of individual function and module. In this flight project the unit testing will focuses on three levels:</h4>
 
@@ -335,7 +335,6 @@ This number is calculated using the Halstead-delivered bug score.
 * Month
 * Day 
 
-#### 3.1.2 Testing Design
 Test Case 1: <br />
 <p>* where x = all IATA code or airport names in database</p>
 
@@ -399,35 +398,38 @@ else { dropdown = not shown; }
 | :------- | ----: | ----: | ----: | ----: | ----: | ----: |
 | 1 | Input Origin | Test Case 1 | Chicago O'Hare International Aiport,  ORD, C, c, Chi, chi | Chicago O'Hare International Aiport | Correctness | |
 | 2 | Input Destination | Test Case 1 | Wendover Airport, Wen, W, w, we, E, en | Wendover Airport | Correctness | |
-| 3 | Input Origin & Destination | Test Case 2 | OnClick | Show all dropdown | ? | |
+| 3 | Input Origin & Destination | Test Case 2 | OnClick | Show all dropdown | Correctness | |
 | 4 | Input Airline | Test Case 3 | United Air Lines Inc. U, u, UA, ua  | United Air Lines Inc. | Correctness | |
-| 5 | Input Airline | Test Case 4 | OnClick | Show all dropdown | ? | |
+| 5 | Input Airline | Test Case 4 | OnClick | Show all dropdown | Correctness | |
 
-<br />
 
 #### Output functions:
 * Search Button
 * Sorting Button
-* Output Pie Chart and Bar Graph
+* Pie Chart and Bar Graph
 
+Test Case 1:
+<p>Inspect className="button-search" onClick={this.executeSearch} in FlightFilter.js</p>
 
-<h4> 3.2.1.2 Testing Design </h4>
+Test Case 2:
+<p>Inspect SortingState component in AirlinesFlightsInfo.js</p>
 
-<br />
+Test Case 3:
+<p>Inspect BarChart and PieChart component in AirlineFlightsInfo.js</p>
 
-| ID | Test Items | Secnario | Expexted Outcome | Test Factor | Pass or Fail
-| :------- | ----: | ----: | ----: | ----: | ----: | ----: |
-| 1 | a | a | a | a | ? |
-
-
-<br />
+| ID | Test Items | Secnario | Expexted Outcome | Test Factor | Pass or Fail |
+| :------- | ----: | ----: | ----: | ----: | ----: | 
+| 1 | Search Button's Triggers | Test Case 1 | executeSearch() function is called | Correctness |  |
+| 2 | Sorting Button Clickable | Test Case 2 | sortingSaate component is called | Correctness |  |
+| 3 | Visibility of Pie Chart and Bar Chart | Test Case 3 | PieChart and BarChart components  | Correctness |  |
+| 4 | Data of Pie Chart and Bar Chart | Test Case 3 | PieChart and BarChart components | Correctness |  |
 
 ---
 
 ### 3.2 Integration Testing 
 #### 3.2.1 Size & Entity (White Box)
+<p>In this section is to inspect the API level and database level. Such as the connection and communication of API retrieing  the correct data from database according to the input </p>
 
-<br/>
 Test Case 1:
 <p>Launch website and establish connection to MariaDB</p>
 
@@ -448,9 +450,6 @@ Test Case 4:
 Test Case 5:
 <p>Input related data and click on search button</p>
 
-<br/>
-Test Case 6
-
 | ID | Test Items | Secnario | Input | Expected Outcome | Test Factor | Pass or Fail
 | :------- | ----: | ----: | ----: | ----: | ----: | ----: |
 | 1 | Check the connection with database | Test Case 1 | http://172.104.176.214:3000/ | Connection is established successfully | Correctness | ? |
@@ -462,10 +461,10 @@ Test Case 6
 
 <br/>
 
-### 3.3 GUI Testing (System Testing)
-#### This section will use black box testing to test the system as a whole. The test is is design according to the functional and non-functional requirements that are listed in the appendix section.
+### 3.3 System Testing (Black Box)
 
-<br/>
+<p> This section will use black box testing to test the system as a whole. The test is is design according to the functional and non-functional requirements that are listed in the appendix section. </p>
+
 
 <h4> Mobile Compatibility testing </h4>
 <h5> Test Case 1 </h5>
@@ -506,8 +505,8 @@ Test Case 6
 
 </br>
 
-<h4> Interface Featurea Testing (GUI) </h4>
-</br>
+<h4> Flight Web Interface Testing (GUI) </h4>
+
 <h5> Test Case 1 </h5>
 <p> View Search button alignment with different screen sizes. </p>
 
