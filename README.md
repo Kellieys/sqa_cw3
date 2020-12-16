@@ -44,18 +44,18 @@
 <br/>
 
 ### McCall's Factor Model
-In this section, the report will focuses on the design of test case and scenario. In order to evaluate and improve the software, the testing strategies and techniques that will be execute in the next stage are documented as below. The main testing direction will be a narrow-to-broader, bottom-to-top scope. Figure 1 below illustrate how Such testing deisgn can be achieve by unit testing, integration testing and system testing. The objective of these testing are evaluate and examine the software quality factors of Flights according to the McCall's Model, hence, accesing the correctness, realiability, efficiency, integrity, usablity, maintainability, flexibility, testability, protability, resuability and interoperability of the software. 
+In this section, the report will focuses on the design of test case and scenario. In order to evaluate and improve the software, the testing strategies and techniques that will be execute in the next stage are documented as below. The main testing direction will be a narrow-to-broader, bottom-to-top scope. Figure 1 below illustrate how such testing deisgn can be achieve by unit testing, integration testing and system testing. The objective of these testing are evaluate and examine the software quality factors of Flights according to the McCall's Model, hence, accesing the correctness, realiability, efficiency, integrity, usablity, maintainability, flexibility, testability, protability, resuability and interoperability of the software. 
 
 
 <div align="center">
  <br />
   <img src="media/sqa31.png" />
-    <h4>Figure 1 Testing strategies</h4>
+    <h4>Figure 1.1: Testing strategies</h4>
 </div>
 
 
-## Metrics
-### Halstead Metrics
+### Metrics
+#### Halstead Metrics
 Halstead metrics was introduced and developed by Maurice Halstead in 1977. It is one of the oldest measures of program complexity and often used to measure the maintenance metric. Halstead's metrics interprets a software's source code as a sequence of tokens and it classifies each of them to be an operator or operand. 
 
 Where operator could be the storage class specifiers (i.e. static, auto, etc.), type qualifiers (i.e. const), reserved words from programming languages (i.e. break, default, public, etc.), or simply mathematical and logical operators(i.e. +, -, &&, etc.) . On the other hand, operands could be the identifiers (i.e. variable names), type specifiers (i.e. Boolean, integer, etc.) or a constant number of character. 
@@ -127,12 +127,20 @@ The following are metrics produced by plato on the client application.
 The maintainability score considers the Halstead volume, cyclomatic complexity, and the line count for each source file.
 
 ![maintainability](media/maintainability.png)
+<div align="center">
+    <h4>Figure 1.2: Maintainability</h4>
+</div>
 
 **Lines of Code**
 
 The lines of code graph helps identify large files, which are typically indicative of code that should be broken down or simplified.
 
 ![LOC](media/LOC.png)
+<div align="center">
+    <h4>Figure 1.3: Lines of Code</h4>
+</div>
+
+<br />
 
 Total Lines of Code for Client = 762
 
@@ -145,8 +153,16 @@ Adding both LOC from Client and API = 1050 lines of code
 This number is calculated using the Halstead-delivered bug score.
 
 ![errorCount](media/ErrorsInImplementation.png)
+<div align="center">
+    <h4>Figure 1.4: Errors in implementation</h4> 
+</div>
 
-**Summary**
+<br />
+
+<div align="center">
+    <h3>Summary</h3>
+
+
 |Files|Complexity|Lines Of Code|Est. Errors|
 |:---:|:---:|:---:|:---:|
 |index.js|1|12|0.05|
@@ -157,38 +173,14 @@ This number is calculated using the Halstead-delivered bug score.
 |FlightPlanHeader.js|3|29|0.14|
 |FlightsFilter.js|8|259|2.80|
 
+</div>
 
-<!-- ### Direct Metrics
-Direct metric is a metric that does not rely upon the measure of any other attribute. It is a functional that have only one variable.
+<br />
 
-We can apply Direct Metric on our Flights application by calculating it's size in terms of LOC (Lines of Code), and the programming time in terms of person-months.
-
-****Size = 1163 LOC****
-
-****Programming Time = 2 person-months****
-
-### Derived Metrics
-Derived Metrics are measured using more than one attributes. It combines a number of measures through a formula. 
-
-We are going to apply Derived Metric on our Flights application by calculating Programmer Productivity.
-
-$Programmer\hspace{0.1cm}Productivity = \frac{LinesOfCode}{ProgrammingTime}$
-
-$Programmer\hspace{0.1cm}Productivity = \frac{1163}{2} = 582 \hspace{0.1cm}LOC/person\hspace{0.1cm}per\hspace{0.1cm}month$
-
-$Module\hspace{0.1cm}Defect\hspace{0.1cm}Density = \frac{NumberOfDefects}{Module Size}$
-
-$Defect\hspace{0.1cm}Detection\hspace{0.1cm}Efficiency=\frac{NumberOfDefectsDetected}{TotalNumberOfDefects}$ -->
-
-<!-- ### Internal Metrics
-****Size of Flights Application****
-
-| Total No. of Lines | LOC | No. of Classes|
-| :----: | :---: | :---: |
-| 1,326 | 1,163 | 16 | -->
+<div align="center">
+    <h3>External Matrix</h3>
 
 
-### External Metrics
 ****HTTP Requests of Flights Application****
 
 | MIME Type | Requests |
@@ -200,6 +192,7 @@ $Defect\hspace{0.1cm}Detection\hspace{0.1cm}Efficiency=\frac{NumberOfDefectsDete
 | font | 4 |
 | css | 2 |
 
+</div>
 
 <br/>
 
@@ -211,35 +204,57 @@ $Defect\hspace{0.1cm}Detection\hspace{0.1cm}Efficiency=\frac{NumberOfDefectsDete
 
 </div>
 
-<h3> Quality Management Plan </h3>
+### Quality Management Plan 
 
- | Name | Role | Key Responsibility |
- | :------- | ----: | ----: |
- | Kelly Lim | Group Leader | Quality mentoring and Coaching |
- | Ling Kuok Ging | Team Menber | Testing for UI and UX |
- | Lee Ze-Cong| Team Member | Backend testing | 
- | Raveen | Team Member | Backend testing |
- | Yap Jun Kiat | Team Member | Testing for UI and UX |
-
- <h4> Implementation checklist </h4>
-
-
- | Checkist | State |
- | :------- | ----: |
- | Has the software meet our requirement? | True |
- | Are test unit being used in the code ? | True |
- | Has the maintaining jobs being divided to all the members ? | True |
- | Has mobile been tested | True |
-
-
- </br> 
-
- <h4>Project Quality Measurement</h4>
+<div align="center">
+ <h3>Project Quality Measurement</h3>
 
  | Key Measurement | Description |
  | :------- | ----: |
  | Product Issues | Database has too many data and slow down searching efficiency. |
  | Performance | Flight project should show details data when user input data and search. |
+
+</div>
+
+<br />
+
+<div align="center">
+
+  <h3>Key Responsibility</h3>
+
+ | Name | Role | Key Responsibility |
+ | :------- | ----: | ----: |
+ | Lim Kelly | Group Leader | Unit Tests, System Tests, Validation |
+ | Ling Kuok Ging | Team Member | Integration Tests |
+ | Lee Ze-Cong| Team Member | Integration Tests, System Tests | 
+ | Raveen | Team Member | UI/UX Tests |
+ | Yap Jun Kiat | Team Member | UI/UX Tests|
+
+</div>
+
+<br />
+
+<div align="center">
+ <h3> Implementation Checklist </h3>
+
+
+ | Checkist | State |
+ | :------- | ----: |
+ | Has the software meet the requirements? | TBD |
+ | Are test unit being used in the code ? | True |
+ | Has the maintaining responsibilities delegate all the members ? | True |
+ | Has mobile view been tested? | TBD |
+
+</div>
+
+ </br> 
+
+ <div align="center">
+  <img src="media/SQA.png" />
+  <h4>Figure 2.1: Software Quality Activities </h4>
+</div>
+<br />
+
 
  </br>
  <h3> Conducting formal and informal review and inspection </h3>
