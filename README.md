@@ -519,6 +519,9 @@ else { dropdown = not shown; }
  
 <h4> Test Case 5 </h4>
 <p> Hover on Pie or bar chart to view the data in a small box.  </p>
+
+<h4> Test case 6 </h4>
+<p> Search button is pressed </p>
 </br>
 
 | ID | Test Item | Scenarios | Input | Expected Output | Test Factor | Pass or Fail |
