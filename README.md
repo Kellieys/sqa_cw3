@@ -64,8 +64,8 @@ The token is counted as:
 
 - ![n1](media/n1.png) - number of unique operators
 - ![n2](media/n2.png) - number of unique operands
-- ![N1](media/n_1.png) - total number of operators
-- ![N2](media/n_2.png) - total number of operands
+- ![N1](media/num1.png) - total number of operators
+- ![N2](media/num2.png) - total number of operands
 
 Following are Halstead metrics that are derived from these quantities with brief description and fixed formulas: 
 
