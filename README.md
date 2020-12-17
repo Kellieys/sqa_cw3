@@ -69,25 +69,25 @@ The token is counted as:
 
 Following are Halstead metrics that are derived from these quantities with brief description and fixed formulas: 
 
-**Program Length ($N$)**
+**Program Length (N)**
 
 The program length measures the sum of the total number of operators and operands.
 
 ![ProgramLength](media/N.png)
 
-**Vocabulary Size ($n$)**
+**Vocabulary Size (n)**
 
 The vocabulary size measures the sum of the total number of unique operators and operands. 
 
 ![VocabSize](media/mu.png)
 
-**Program Volume ($V$)**
+**Program Volume (V)**
 
 The program volume measures the size of the implementation of an algorithm. It focuses more on the number of operations performed and operands handled in the algorithm, making it less sensitive to code layout. 
 
 ![Volume](media/V.png)
 
-**Difficulty Level ($D$)**
+**Difficulty Level (D)**
 
 The difficulty level measures the error proneness of the program. It is proportional to the number of unique operators and also between total number of operands and the number of unique operands. 
 
@@ -99,24 +99,25 @@ The program level measures the opposite or inverse of error proneness.
 
 ![Level](media/L.png)
 
-**Effort to implement ($E$)**
-The 'effort to implement' metric measures the effort required to understand the program. It is proportional to the volume($V$) and difficulty level($D$) of the program. 
+**Effort to implement (E)**
+The 'effort to implement' metric measures the effort required to understand the program. It is proportional to the volume(V) and difficulty level(D) of the program. 
 
 ![Effort](media/E.png)
 
-**Time to implement ($T$)**
+**Time to implement (T)**
 
-The 'time to implement' metric measures the approximate of time to implemented the program. It is proportional to effort ($E$).
+The 'time to implement' metric measures the approximate of time to implemented the program. It is proportional to effort (E).
 
 ![Time](media/T.png)
 
-**Number of delivered bugs ($B$)**
+**Number of delivered bugs (B)**
 
 The 'number of delivered bugs' metric measures approximate number of errors in implementation and the overall complexity of the software. 
 
 ![Bugs](media/B.png)
 
 </br>
+
 ### Plato
 
 Plato is a software complexity analysis tool specifically for JavaScript projects. It generates a report based on the complexity data from a library called escomplex. Behind this library, it calculates both Halstead's metrics and McCabe's Cyclomatic complexity. However, it is important to interpret the report produced by these tools in a mindful manner. It helps to identify certain areas of code that contains unknown bugs or inefficiencies and helps to visualise the complexity distributed across on each function or the whole project.
@@ -461,7 +462,7 @@ else { dropdown = not shown; }
 <p> This section will use black box testing to test the system as a whole. The test is is design according to the functional and non-functional requirements that are listed in the appendix section. </p>
 
 
-<h4> Mobile Compatibility testing </h4>
+<h4> Mobile Compatibility Testing </h4>
 <h4> Test Case 1 </h4>
 <p> Launch the website on a mobile device and check if the layout of the UI is out of bounds of the mobile device's screen size </p>
 
