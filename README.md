@@ -309,7 +309,7 @@ This number is calculated using the Halstead-delivered bug score.
 <br/>
 
 ### Testing objectives 
-#### Testing is an impotant quality control activity. this is to detect and fix defects. The main objectives are to identify and reveal errors or defects and ensure its correctness, completeness of the software and conforming to the requirements.  
+<p> Testing is an impotant quality control activity. this is to detect and fix defects. The main objectives are to identify and reveal errors or defects and ensure its correctness, completeness of the software and conforming to the requirements. </p>
 
 <div align="center">
  <br />
@@ -325,7 +325,7 @@ This number is calculated using the Halstead-delivered bug score.
 ### 3.1 Unit Testing
 #### 3.1.1 Functional and Structure (White Box)
 
-<h4> The unit testing concerns with the correctness of individual function and module. In this flight project the unit testing will focuses on three levels:</h4>
+<p> The unit testing concerns with the correctness of individual function and module. In this flight project the unit testing will focuses on three levels:</p>
 
 #### Input functions:
 * Origin
