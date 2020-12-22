@@ -13,7 +13,6 @@ import {
   CartesianGrid,
 } from "recharts";
 import { CircleToBlockLoading } from 'react-loadingg';
-
 export default class AirlineFlightsInfo extends Component {
   colors = ["#003545", "#2F99A3", "#ABC74A", "#96DDCF", "#0E6488", "#424F62"];
 
@@ -187,38 +186,41 @@ export default class AirlineFlightsInfo extends Component {
         <div className="form-sub-header">
           {!!this.props.airline ? this.props.airline.name : ""}
         </div>
-        {delays_comparison_loading || airline_delays_loading ?
+        <div>
+        {airline_delays_loading || delays_comparison_loading?
           <CircleToBlockLoading color='#003545'/>
           :
-          <div>
-          <div className="inline-div-50">
-            <p class="charts-title">Delay % By Type</p>
-            <PieChart className="form-content" width={400} height={300}>
-              <Pie
-                isAnimationActive={false}
-                data={airline_delays}
-                cx={200}
-                cy={125}
-                outerRadius={80}
-                fill="#8884d8"
-                label
-              >
-                {airline_delays.map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={this.colors[index]} />
-                ))}
-              </Pie>
-              <Tooltip />
-              <Legend align="center" />
-            </PieChart>
+          <div className="row">
+            <div className="column">
+              <div align="center">
+                <p class="charts-title">Delay % By Type</p>
+                <PieChart className="form-content" width={400} height={300}>
+                  <Pie
+                    isAnimationActive={false}
+                    data={airline_delays}
+                    cx={200}
+                    cy={125}
+                    outerRadius={80}
+                    fill="#8884d8"
+                    label
+                  >
+                    {airline_delays.map((entry, index) => (
+                      <Cell key={`cell-${index}`} fill={this.colors[index]} />
+                    ))}
+                  </Pie>
+                  <Tooltip />
+                  <Legend align="center"/>
+                </PieChart>
+              </div>
           </div>
-          <div className="inline-div-50">
+          <div className="column">
+          <div align="center">
             <p class="charts-title">
               Airline (avg minutes) delays vs. All (avg minutes) delays{" "}
             </p>
-            
             <BarChart
-              className="Form-content"
-              width={400}
+              className="form-content"
+              width={window.innerWidth > 400 ? 400 : 280}
               height={300}
               data={delays_comparison}
             >
@@ -231,8 +233,10 @@ export default class AirlineFlightsInfo extends Component {
               <Bar dataKey="Average" fill="#0E6488" />
             </BarChart>
           </div>
+          </div>
         </div>
         }
+        </div>
       </div>
     );
   }

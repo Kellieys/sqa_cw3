@@ -18,7 +18,7 @@
 
 .title-text {
   margin: 0px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
 }
 
@@ -68,19 +68,20 @@
 
 .form-section {
   text-align: left;
+  align-self: center;
 }
 
 .form-section p {
-  margin-bottom: 10px;;
+  margin-bottom: 10px;
 }
 
 .filter-background {
   background: #E5E1E5;
-  border-radius: 5px;;
+  border-radius: 5px;
 }
 
 .airport-picker {
-  width: 400px;
+  width: 220px;
 }
 
 button {
@@ -174,4 +175,56 @@ button:hover {
 
 table.table-50 {
   width: 40%;
+}
+
+.input_wrapper {
+  margin: 15px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.inner-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.double-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+}
+
+@media screen and (min-width: 800px) {
+  .column {
+    flex: 1
+  }
+
+  .double-column {
+    flex: 2
+  }
+
+  .airport-picker {
+    width: 400px;
+  }
+
+  .title-text {
+    font-size: 30px;
+  }
+  
 }

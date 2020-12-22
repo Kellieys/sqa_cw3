@@ -40,7 +40,7 @@ export default class Dashboard extends Component {
         return (
             <div className="form-main">
                 <div className="filter-background">
-                    <FlightsFilter executeSearch={(params) => this.executeSearch(params)} />
+                    <FlightsFilter executeSearch={(params) => this.executeSearch(params)}/>
                 </div>
                 <div>
                     <div className={origin !== null ? '' : 'hidden'}>

@@ -1,8 +1,17 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import Select from 'react-select';
+import BaseSelect from 'react-select';
+import FixRequiredSelect from './FixRequiredSelect';
+
 
 // TODO: Add validation checks on origin and destination
+const Select = props => (
+    <FixRequiredSelect
+        {...props}
+        SelectComponent={BaseSelect}
+        options={props.options}
+    />
+);
 export default class FlightsFilter extends Component {
     // TODO: Loop through to create years/days. Went with the quick and dirty instead. -RH
     state = {
@@ -125,12 +134,12 @@ export default class FlightsFilter extends Component {
 
         var params = {
             origin: { 
-                code: selectedOriginOption.value,
-                name: selectedOriginOption.label
+                code: selectedOriginOption !== null ? selectedOriginOption.value : null,
+                name: selectedOriginOption !== null ? selectedOriginOption.label : null
             },
             destination: {
-                code: selectedDestinationOption.value,
-                name: selectedDestinationOption.label
+                code: selectedDestinationOption !== null ? selectedDestinationOption.value : null,
+                name: selectedDestinationOption !== null ? selectedDestinationOption.label : null
             },
             yearFrom: selectedYearFromOption !== null ? selectedYearFromOption.value : null,
             yearTo: selectedYearToOption !== null ? selectedYearToOption.value : null,
@@ -147,8 +156,11 @@ export default class FlightsFilter extends Component {
         else {
             params.airline = null
         }
-
-        this.props.executeSearch(params);
+        if(selectedYearToOption >= selectedYearFromOption){
+            this.props.executeSearch(params);
+        }else{
+            alert("Please select a valid year range! ");
+        }
     }
 
     renderAirportOptions(selectedOption, handleChange) {
@@ -159,6 +171,7 @@ export default class FlightsFilter extends Component {
                 onChange={handleChange}
                 options={this.state.airports}
                 isClearable="true"
+                required
             />
         );
     }
@@ -171,56 +184,62 @@ export default class FlightsFilter extends Component {
                 onChange={handleChange}
                 options={this.state.airlines}
                 isClearable="true"
+                required
             />
         );
     }
 
     render() {
         return (
-            <div>
-                <table cellSpacing="10">
-                    <tr>
-                        <td>
+            <div className='input_wrapper'>
+                <form onSubmit={(e) => {
+                    e.preventDefault()
+                    return (this.executeSearch() 
+                )}}>
+                <div className='row'>
+                    <div className='column'>
                             <div className="form-section">
                                 <p>Origin</p>
                                 {this.renderAirportOptions(this.state.selectedOriginOption,this.handleOriginChange)}
                             </div>
-                        </td>
-                        <td>
+                    </div>
+                    <div className='column'>
                             <div className="form-section">
                                 <p>Destination</p>
                                 {this.renderAirportOptions(this.state.selectedDestinationOption,this.handleDestinationChange)}
                             </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div className="form-section">
-                                <p>Airline</p>
-                                {this.renderAirlineOptions(this.state.selectedAirlineOption,this.handleAirlineChange)}
-                            </div>
-                        </td>
-                        <td>
-                            <div className="form-section">
-                                <div className="float-left">
+                    </div>
+                </div>
+                <div className='row 2'>
+                    <div className='column'>
+                        <div className="form-section">
+                            <p>Airline</p>
+                            {this.renderAirlineOptions(this.state.selectedAirlineOption,this.handleAirlineChange)}
+                        </div>
+                    </div>
+                    <div className='column'>
+                            <div className='inner-row'>
+                                <div className="form-section">
                                     <p>From</p>
                                     <Select
                                         className="select-year"
                                         value={this.state.selectedYearFromOption}
                                         onChange={this.handleYearFromChange}
                                         options={this.state.years}
+                                        required
                                     />
                                 </div>
-                                <div className="float-left">
+                                <div className="form-section">
                                     <p>To</p>
                                     <Select
                                         className="select-year"
                                         value={this.state.selectedYearToOption}
                                         onChange={this.handleYearToChange}
                                         options={this.state.years}
+                                        required
                                     />
                                 </div>
-                                <div className="float-left">
+                                <div className="form-section">
                                     <p>Month</p>
                                     <Select
                                         className="select-month"
@@ -230,7 +249,7 @@ export default class FlightsFilter extends Component {
                                         isClearable="true"
                                     />
                                 </div>
-                                <div className="float-left">
+                                <div className="form-section">
                                     <p>Day</p>
                                     <Select
                                         className="select-day"
@@ -241,14 +260,14 @@ export default class FlightsFilter extends Component {
                                     />
                                 </div>
                             </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colSpan="2">
-                            <button className="button-search" onClick={this.executeSearch}>Search</button>
-                        </td>
-                    </tr>
-                </table>
+                    </div>
+                </div>
+
+                <div className='row 3'>
+                <button className="button-search" type="submit">Search</button>
+                {/* <input className="button-search" type="button" value="Submit" /> */}
+                </div>
+                </form>
             </div>
         );
     }
