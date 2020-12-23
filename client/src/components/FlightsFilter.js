@@ -156,7 +156,7 @@ export default class FlightsFilter extends Component {
         else {
             params.airline = null
         }
-        if(selectedYearToOption >= selectedYearFromOption){
+        if(selectedYearToOption.value >= selectedYearFromOption.value){
             this.props.executeSearch(params);
         }else{
             alert("Please select a valid year range! ");

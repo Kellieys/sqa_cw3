@@ -194,13 +194,13 @@ export default class AirlineFlightsInfo extends Component {
             <div className="column">
               <div align="center">
                 <p class="charts-title">Delay % By Type</p>
-                <PieChart className="form-content" width={400} height={300}>
+                <PieChart className="form-content" width={window.innerWidth > 400 ? 400 : 300} height={300}>
                   <Pie
                     isAnimationActive={false}
                     data={airline_delays}
-                    cx={200}
-                    cy={125}
-                    outerRadius={80}
+                    cx={window.innerWidth > 400 ? 200 :150}
+                    cy={window.innerWidth > 400 ? 125 : 94}
+                    outerRadius={window.innerWidth > 400 ? 80 : 65}
                     fill="#8884d8"
                     label
                   >
@@ -220,8 +220,8 @@ export default class AirlineFlightsInfo extends Component {
             </p>
             <BarChart
               className="form-content"
-              width={window.innerWidth > 400 ? 400 : 280}
-              height={300}
+              width={window.innerWidth > 400 ? 400 : 250}
+              height={window.innerWidth > 400 ? 300: 200}
               data={delays_comparison}
             >
               <CartesianGrid strokeDasharray="3 3" />
