@@ -136,6 +136,7 @@ export default class AirlineFlightsInfo extends Component {
       throw Error(body.message);
     }
     this.setState({airline_delays_loading: false});
+    console.log("Get airline delays", body);
     return body;
   }
 
@@ -175,6 +176,7 @@ export default class AirlineFlightsInfo extends Component {
       throw Error(body.message);
     }
     this.setState({delays_comparison_loading: false});
+    console.log("Get delays comparison", body);
     return body;
   }
 

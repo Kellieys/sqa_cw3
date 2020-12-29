@@ -76,7 +76,9 @@ export default class AirlinesFlightsInfo extends Component {
 
         if (response.status !== 200) {
             throw Error(body.message) 
-        } 
+        }
+        
+        console.log("Get flights stats", body);
         
         return body;
     }; 

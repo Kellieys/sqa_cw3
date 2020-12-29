@@ -87,6 +87,7 @@ export default class FlightsFilter extends Component {
         if (response.status !== 200) {
             throw Error(body.message) 
         }
+        console.log("Get all airlines", body);
         return body;
     }; 
 
@@ -96,6 +97,7 @@ export default class FlightsFilter extends Component {
         if (response.status !== 200) {
             throw Error(body.message) 
         }
+        console.log("Get all airports", body);
         return body;
     }; 
 
@@ -155,6 +157,9 @@ export default class FlightsFilter extends Component {
         else {
             params.airline = null
         }
+        
+        console.log("Search button clicked", params);
+
         if(selectedYearToOption.value >= selectedYearFromOption.value){
             this.props.executeSearch(params);
         }else{
