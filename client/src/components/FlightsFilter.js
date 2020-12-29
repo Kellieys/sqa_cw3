@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import BaseSelect from 'react-select';
 import FixRequiredSelect from './FixRequiredSelect';
 
-
 // TODO: Add validation checks on origin and destination
 const Select = props => (
     <FixRequiredSelect
@@ -266,6 +265,7 @@ export default class FlightsFilter extends Component {
                 <div className='row 3'>
                 <button className="button-search" type="submit">Search</button>
                 {/* <input className="button-search" type="button" value="Submit" /> */}
+
                 </div>
                 </form>
             </div>
