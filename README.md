@@ -14,9 +14,9 @@
 
  <h4> Module convenor: Dr. Radu Muschevici<br/>
       Chosen Option: MariaDB Project, Flights<br/>
-      Hosted domain: <a>http://172.104.176.214:3000/</a><br/>
-      Due Date: 12 November 2020<br/>
-      Word count: 2909 (Excluding titles)<br/>
+      Hosted domain: <a></a><br/>
+      Due Date: 31 December 2020<br/>
+      GitHub Repositories: https://github.com/Kellieys/sqa_cw3<br/>
 </h4>
 
 <br/>
@@ -38,163 +38,13 @@
 
 <div align="center">
 
- <h2> 1. Software Quality Factors and Metrics</h2>
+ <h2> 1. Introduction</h2>
 
 </div>
 <br/>
 
-### McCall's Factor Model
-In this section, the report will focuses on the design of test case and scenario. In order to evaluate and improve the software, the testing strategies and techniques that will be execute in the next stage are documented as below. The main testing direction will be a narrow-to-broader, bottom-to-top scope. Figure 1 below illustrate how such testing deisgn can be achieve by unit testing, integration testing and system testing. The objective of these testing are evaluate and examine the software quality factors of Flights according to the McCall's Model, hence, accesing the correctness, realiability, efficiency, integrity, usablity, maintainability, flexibility, testability, protability, resuability and interoperability of the software. 
 
 
-<div align="center">
- <br />
-  <img src="media/sqa31.png" />
-    <h4>Figure 1.1: Testing strategies</h4>
-</div>
-
-
-### Metrics
-#### Halstead Metrics
-Halstead metrics was introduced and developed by Maurice Halstead in 1977. It is one of the oldest measures of program complexity and often used to measure the maintenance metric. Halstead's metrics interprets a software's source code as a sequence of tokens and it classifies each of them to be an operator or operand. 
-
-Where operator could be the storage class specifiers (i.e. static, auto, etc.), type qualifiers (i.e. const), reserved words from programming languages (i.e. break, default, public, etc.), or simply mathematical and logical operators(i.e. +, -, &&, etc.) . On the other hand, operands could be the identifiers (i.e. variable names), type specifiers (i.e. Boolean, integer, etc.) or a constant number of character. 
-
-The token is counted as: 
-
-- ![n1](media/n1.png) - number of unique operators
-- ![n2](media/n2.png) - number of unique operands
-- ![N1](media/num1.png) - total number of operators
-- ![N2](media/num2.png) - total number of operands
-
-Following are Halstead metrics that are derived from these quantities with brief description and fixed formulas: 
-
-**Program Length (N)**
-
-The program length measures the sum of the total number of operators and operands.
-
-![ProgramLength](media/N.png)
-
-**Vocabulary Size (n)**
-
-The vocabulary size measures the sum of the total number of unique operators and operands. 
-
-![VocabSize](media/mu.png)
-
-**Program Volume (V)**
-
-The program volume measures the size of the implementation of an algorithm. It focuses more on the number of operations performed and operands handled in the algorithm, making it less sensitive to code layout. 
-
-![Volume](media/V.png)
-
-**Difficulty Level (D)**
-
-The difficulty level measures the error proneness of the program. It is proportional to the number of unique operators and also between total number of operands and the number of unique operands. 
-
-![Difficulty](media/D.png)
-
-**Program Level ($L$)**
-
-The program level measures the opposite or inverse of error proneness. 
-
-![Level](media/L.png)
-
-**Effort to implement (E)**
-The 'effort to implement' metric measures the effort required to understand the program. It is proportional to the volume(V) and difficulty level(D) of the program. 
-
-![Effort](media/E.png)
-
-**Time to implement (T)**
-
-The 'time to implement' metric measures the approximate of time to implemented the program. It is proportional to effort (E).
-
-![Time](media/T.png)
-
-**Number of delivered bugs (B)**
-
-The 'number of delivered bugs' metric measures approximate number of errors in implementation and the overall complexity of the software. 
-
-![Bugs](media/B.png)
-
-</br>
-
-### Plato
-
-Plato is a software complexity analysis tool specifically for JavaScript projects. It generates a report based on the complexity data from a library called escomplex. Behind this library, it calculates both Halstead's metrics and McCabe's Cyclomatic complexity. However, it is important to interpret the report produced by these tools in a mindful manner. It helps to identify certain areas of code that contains unknown bugs or inefficiencies and helps to visualise the complexity distributed across on each function or the whole project.
-
-The following are metrics produced by plato on the client application. 
-
-**Maintainability Score**
-
-The maintainability score considers the Halstead volume, cyclomatic complexity, and the line count for each source file.
-
-![maintainability](media/maintainability.png)
-<div align="center">
-    <h4>Figure 1.2: Maintainability</h4>
-</div>
-
-**Lines of Code**
-
-The lines of code graph helps identify large files, which are typically indicative of code that should be broken down or simplified.
-
-![LOC](media/LOC.png)
-<div align="center">
-    <h4>Figure 1.3: Lines of Code</h4>
-</div>
-
-<br />
-
-Total Lines of Code for Client = 762
-
-Total Lines of Code for API = 288
-
-Adding both LOC from Client and API = 1050 lines of code
-
-**Estimated Error Count**
-
-This number is calculated using the Halstead-delivered bug score.
-
-![errorCount](media/ErrorsInImplementation.png)
-<div align="center">
-    <h4>Figure 1.4: Errors in implementation</h4> 
-</div>
-
-<br />
-
-<div align="center">
-    <h3>Summary</h3>
-
-
-|Files|Complexity|Lines Of Code|Est. Errors|
-|:---:|:---:|:---:|:---:|
-|index.js|1|12|0.05|
-|App.js|1|17|0.03|
-|Dashboard.js|4|60|0.32|
-|AirlineFlightsInfo.js|18|249|1.85|
-|AirlinesFlightsInfo.js|12|136|1.11|
-|FlightPlanHeader.js|3|29|0.14|
-|FlightsFilter.js|8|259|2.80|
-
-</div>
-
-<br />
-
-<div align="center">
-    <h3>External Matrix</h3>
-
-
-****HTTP Requests of Flights Application****
-
-| MIME Type | Requests |
-| :---: | :---: |
-| js | 41 |
-| html | 23 |
-| image | 10 |
-| other | 10 |
-| font | 4 |
-| css | 2 |
-
-</div>
 
 <br/>
 
@@ -202,39 +52,11 @@ This number is calculated using the Halstead-delivered bug score.
 
 <div align="center">
 
- <h2> 2. Software Quality Activities</h2>
+ <h2> 2. Test Cases</h2>
 
 </div>
 
-### Quality Management Plan 
-
-<div align="center">
- <h3>Project Quality Measurement</h3>
-
- | Key Measurement | Description |
- | :------- | ----: |
- | Product Issues | Database has too many data and slow down searching efficiency. |
- | Performance | Flight project should show details data when user input data and search. |
-
-</div>
-
-<br />
-
-<div align="center">
-
-  <h3>Key Responsibility</h3>
-
- | Name | Role | Key Responsibility |
- | :------- | ----: | ----: |
- | Lim Kelly | Group Leader | Unit Tests, System Tests, Validation |
- | Ling Kuok Ging | Team Member | Integration Tests |
- | Lee Ze-Cong| Team Member | Integration Tests, System Tests | 
- | Raveen | Team Member | UI/UX Tests |
- | Yap Jun Kiat | Team Member | UI/UX Tests|
-
-</div>
-
-<br />
+### 2.1 Fullfillments of Quality Management Plan 
 
 <div align="center">
  <h3> Implementation Checklist </h3>
@@ -251,80 +73,9 @@ This number is calculated using the Halstead-delivered bug score.
 
  </br> 
 
-<div align="center">
-   <h3>Activities Descriptions</h3>
-   <br />
-</div>
 
- <div align="center">
-  <img src="media/SQA.png" />
-  <h4>Figure 2.1: Software Quality Activities </h4>
-</div>
-<br />
-
-
- <h3> 2.1 Conducting formal and informal review and inspection</h3>
- <p>The main purpose of formal review is to gain consensus and detect possible defects in Flight Project. Flights project should meet the functional and non-functional requirements, such as display analytics and infromation based on input. Besides, Flight project also shall display error messages if the required fields are empty. </p>
-
- <h3> Enforcing progress adherence </h3>
- <p>•	Product Evaluation
-    - Flight project allows user to choose the departure airport, destination airport, departure time and date.
-    - Flight project allows user to search the airport by its short-form name and art of the name. E.g. user can search Phoenix Sky Harbor International Airport by searching Phoenix. 
-    - There is a table to show flight details and users can sort the table by Airline name.
-    - There is a delay chart for user to know the delay time and delay type.
-
- •	Process Monitoring 
-    Testing techniques such as black box and white box testing are taking part in this session to make sure the correct steps are being implemented and the code is running in the way how it should be. 
-
- </p>
-
- <h3> Controlling changes</h3>
-
- <p>During development and maintenance phases, by applying changes to Flight project, we are changing the code but controlling the change effect, to ensure Flight project maintain its quality. 
- </p>
-
- <h3> Measuring impact of change </h3>
-
- <p>When a bug or defect is detected in the Flight project, change is required to perform the fix. The impact of change is measured to determine how significant was the change and how it affected the project. It is also required to check if the Flight project is compatabile with the new change after fixing the defects.
-</p>
-
- <h3> Performing QA audits </h3>
-
- <p>Performing SQA audits ensures that the Flight project adheres to the defined standards and procedures. It also makes sure that the requirements of the Flight project are met. If the quality standards or the requirements are not met, it will be reflected to the development team to make changes accordingly.
-</p>
-
- <h3> Keeping records and reporting </h3>
-
- <p>Keeping records and reporting ensures that the Flight project has all the necessary documents for future reference, and the documents recorded are also shared with the stakeholders. The documents are also extremely useful in case something went wrong in the Flight project, the development team can look at the documentation and figure out what is the problem. 
- </p>
-
----
-
-<br/>
-
-<div align="center">
-
- <h2> 3. Software Testing Strategies</h2>
-
-</div>
-<br/>
-
-### Testing objectives 
-<p> Testing is an impotant quality control activity. this is to detect and fix defects. The main objectives are to identify and reveal errors or defects and ensure its correctness, completeness of the software and conforming to the requirements. </p>
-
-<div align="center">
- <br />
-  <img src="media/overviewprocess.png" />
-    <h4>Figure 3.1: Flow diagram for process overview </h4>
-
-</div>
-
- <br />
-
-### Software Testing Strategies and Planning
-
-### 3.1 Unit Testing
-#### 3.1.1 Functional and Structure (White Box)
+### 2.2 Outcomes of Unit Testing 
+#### 2.1.1 Functional and Structure (White Box)
 
 <p> The unit testing concerns with the correctness of individual function and module. In this flight project the unit testing will focuses on three levels:</p>
 
