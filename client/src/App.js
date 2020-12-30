@@ -9,7 +9,7 @@ function App() {
         <p className="title-text">Real-Time Flight Analytics</p>
         <p className="sub-title-text">A MariaDB ColumnStore Demo</p>
       </header>
-      <Dashboard />
+      <Dashboard /> 
     </div>
   );
 }
