@@ -8,8 +8,3 @@ function Button({label}) {
 }
 
 export default Button;
-
-// function Button({label}) {
-//     return <div data-testid="button">{label}</div>
-    
-// }

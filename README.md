@@ -36,7 +36,89 @@
 ---
 
 
+## 2.1 Unit Testing
+### 2.1.1 Functional and Structure (White Box)
+
+<br/>
+Test Case 1:
+<p>Input Origin</p>
+if (handleOriginChange) {<br/>
+console.log("this.state.selectedOriginOption)}<br/>
+<img src="media/handleorigin.png"></br>
+
+<br/>
+Test Case 2:
+<p>Input Destination</p>
+if (handleDestinationChange) {<br/>
+console.log("this.state.selectedDestinationOption)}<br/>
+<img src="media/handledestination.png"></br>
+
+<br/>
+Test Case 3:
+<p> Input Airline</p>
+if (handleAirlineChange) {<br/>
+console.log("this.state.selectedAirlineOption)}<br/>
+<img src="media/handleairline.png"></br>
+
+<br/>
+Test Case 4:
+<p>Input From</p>
+if (handleYearFromChange) {<br/>
+console.log("this.state.selectedYearFromOption)}<br/>
+<img src="media/handlefrom.png"></br>
+
+<br/>
+Test Case 5:
+<p>Input To</p>
+if (handleYearToChange) {<br/>
+console.log("this.state.selectedYearToOption)}<br/>
+<img src="media/handleto.png"></br>
+
+<br/>
+Test Case 6:
+<p>Input Month</p>
+if (handleMonthChange) {<br/>
+console.log("this.state.selectedMonthOption)}<br/>
+<img src="media/handlemonth.png"></br>
+
+<br/>
+Test Case 7:
+<p>Input Day</p>
+if (handleDayChange) {<br/>
+console.log("this.state.selectedDayOption)}<br/>
+<img src="media/handleday.png"></br>
+
+
+| ID | Test Item | Scenario | Input | Expected Output | Test Factor | Pass or Fail |
+| :------- | ----: | ----: | ----: | ----: | ----: | ----: |
+| 1 | Input Origin | Test Case 1 | onClick | Console log "state" of current user's input | Correctness | Pass |
+| 2 | Input Destination | Test Case 2 | onClick | Console log "state" of current user's input | Correctness |Pass |
+| 3 | Input Airline | Test Case 3 | OnClick |Console log "state" of current user's input | Correctness | Pass |
+| 4 | Input From | Test Case 4 |onClick |Console log "state" of current user's input | Correctness | Pass |
+| 5 | Input To | Test Case 5 | OnClick | Console log "state" of current user's input | Correctness | Pass |
+| 6 | Input Month | Test Case 6 | OnClick | Console log "state" of current user's input | Correctness | Pass |
+| 7 | Input Day | Test Case 7 | OnClick | Console log "state" of current user's input| Correctness | Pass |
+
+</br>
+<h3>Results of test cases:</h3>
+Test case 1:</br>
+<img src="media/resulthandleorigin.png"></br>
+</br>Test case 2:
+<img src="media/resulthandledestination.png"></br>
+</br>Test case 3:
+<img src="media/resulthandleairline.png"></br>
+</br>Test case 4:
+<img src="media/resulthandlefrom.png"></br>
+</br>Test case 5:
+<img src="media/resulthandleto.png"></br>
+</br>Test case 6:
+<img src="media/resulthandlemonth.png"></br>
+</br>Test case 7:
+<img src="media/resulthandleday.png"></br>
+
+
 ## 2.2 Integration Testing 
+### 2.2.1 Size & Entity (White Box)
 
 <br/>
 Test Case 1:

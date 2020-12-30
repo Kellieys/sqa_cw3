@@ -104,31 +104,38 @@ export default class FlightsFilter extends Component {
     }; 
 
     handleOriginChange = selectedOriginOption => {
-        this.setState({ selectedOriginOption });
+        this.setState({ selectedOriginOption }, 
+        console.log(this.state.selectedOriginOption));
     };
 
     handleDestinationChange = selectedDestinationOption => {
-        this.setState({ selectedDestinationOption });
+        this.setState({ selectedDestinationOption }, 
+        console.log(this.state.selectedDestinationOption));
     };
 
     handleAirlineChange = selectedAirlineOption => {
-        this.setState({ selectedAirlineOption });
+        this.setState({ selectedAirlineOption }, 
+        console.log(this.state.selectedAirlineOption));
     };
 
     handleYearFromChange = selectedYearFromOption => {
-        this.setState({ selectedYearFromOption });
+        this.setState({ selectedYearFromOption }, 
+        console.log(this.state.selectedYearFromOption));
     };
 
     handleYearToChange = selectedYearToOption => {
-        this.setState({ selectedYearToOption });
+        this.setState({ selectedYearToOption }, 
+        console.log(this.state.selectedYearToOption));
     };
 
     handleMonthChange = selectedMonthOption => {
-        this.setState({ selectedMonthOption });
+        this.setState({ selectedMonthOption }, 
+        console.log(this.state.selectedMonthOption));
     };
 
     handleDayChange = selectedDayOption => {
-        this.setState({ selectedDayOption });
+        this.setState({ selectedDayOption }, 
+        console.log(this.state.selectedDayOption));
     };
 
     async executeSearch() {
