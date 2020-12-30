@@ -21,6 +21,7 @@ export default class AirlineFlightsInfo extends Component {
     delays_comparison: [],
     airline_delays_loading: false,
     delays_comparison_loading: false,
+    testVisibility: "Chart is showing",
   };
 
   componentDidMount() {
@@ -196,7 +197,8 @@ export default class AirlineFlightsInfo extends Component {
             <div className="column">
               <div align="center">
                 <p class="charts-title">Delay % By Type</p>
-                <PieChart className="form-content" width={window.innerWidth > 400 ? 400 : 300} height={300}>
+                <PieChart className="form-content" width={window.innerWidth > 400 ? 400 : 300} height={300} >
+                  {console.log(this.state.testVisibility)}
                   <Pie
                     isAnimationActive={false}
                     data={airline_delays}
@@ -226,6 +228,7 @@ export default class AirlineFlightsInfo extends Component {
               height={window.innerWidth > 400 ? 300: 200}
               data={delays_comparison}
             >
+              {console.log(this.state.testVisibility)}
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="name" />
               <YAxis />

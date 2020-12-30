@@ -103,6 +103,10 @@ export default class AirlinesFlightsInfo extends Component {
     render() {
         const { data, columns, selection } = this.state;
 
+        const test = (this.state);
+
+        console.log("Data in table",test)
+
         return (
             <Paper>
                 <Grid
@@ -112,6 +116,7 @@ export default class AirlinesFlightsInfo extends Component {
                         selection={selection}
                         onSelectionChange={this.changeSelection}
                     />
+
                     <SortingState defaultSorting={[{ columnName: 'cancelled_pct', direction: 'desc' }]} />
                     <IntegratedSorting />
                     <Table />
