@@ -3,7 +3,7 @@ import ReactDom from 'react-dom';
 import Button from '../button';
 
 import { render, cleanup } from "@testing-library/react";
-import "jest-dom/extend-expect";
+import "@testing-library/jest-dom/extend-expect";
 
 import renderer from "react-test-renderer";
 
@@ -15,11 +15,11 @@ it("renders without crashing" , () => {
 });
 
 it("renders button correctly", () => {
-    const { getByTestId } = render(<Button label="hello" />);
-    expect(getByTestId('button')).toHaveTextConetnt("hello")
+    const { getByTestId } = render(<Button label="Search" />);
+    expect(getByTestId('button').textContent).toBe("Search")
 });
 
 it("matches snapshot", () => {
-    const tree = renderer.create(<Button label="hello"></Button>).toJSON();
+    const tree = renderer.create(<Button label="Search"></Button>).toJSON();
     expect(tree).toMatchSnapshot();
 });

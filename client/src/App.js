@@ -2,8 +2,6 @@ import React from 'react';
 import './App.css';
 import Dashboard from './components/Dashboard';
 
-import Button from "./components/button/button";
-
 function App() {
   return (
     <div className="app">
@@ -11,12 +9,7 @@ function App() {
         <p className="title-text">Real-Time Flight Analytics</p>
         <p className="sub-title-text">A MariaDB ColumnStore Demo</p>
       </header>
-      <Dashboard />
-
-      <Button label="hello"></Button>
-
-
-      
+      <Dashboard /> 
     </div>
   );
 }
