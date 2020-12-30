@@ -476,9 +476,17 @@ else { dropdown = not shown; }
 
 | ID | Test Item | Scenario | Input | Expected Output | Test Factor | Pass or Fail|
 | :------- | ----: | ----: | ----: | ----: | ----: | ----: |
+<<<<<<< HEAD
 | 1 | Layout of the webpage should be within the size of the mobile device's screen | Test Case 1 | On View | Webpage layout including the data input section, title of the page, the search button and the table should be within the size of the mobile device screen | Correctness |  | 
 | 2 | Graph of delay type and time should be shown clearly. | Test Case 2 | On View | The graph of delay type or delay time either in vertical or horizontal screen orientation should be shown clearly without any overlap or overflow | Usability |  | 
 | 3 | Interactability of graphs and charts | Test Case 3 | On Press | Exact numeric figures should be shown when pressed on a specific quadrant/bar | Usability |  | 
+=======
+| 1 | Background design should align with data input section | Test Case 1 | On View | Background design is fixed and smaller than data input section (1). | Correctness | Fail | 
+| 2 | Width of table should align with the user input section. | Test Case 2 | On View | Width of table is following the background design and not align with data input section. | Correctness | Fail | 
+| 3 | Graph of delay type and time should be shown clearly. | Test Case 3 | On View | Showing the graph of delay type or delay time in mobile vertical mode, both graph is overlaying. When using flight project in mobile horizontal mode, the graph is showing fine but are not fitting in the designed box.(2) | Usability | Fail | 
+
+
+>>>>>>> d19f9d37f0cff0cdb5ebe7b029afcfc3ecb37982
 
 ---
 
@@ -496,14 +504,30 @@ else { dropdown = not shown; }
 <h4> Test case 4 </h4>
 <p> After all required input have been selected, press on the search button and inspect if there's any visual hint of feedback such as a loading spinner</p>
 
+<<<<<<< HEAD
+=======
+<h5> Test case 3 </h5>
+<p> Data will be dalay or rong if network connection is unstable or poor.  </p>
+
+<h5> Test case 4 </h5>
+<p> Database need to be connected to show data. </p>
+
+>>>>>>> d19f9d37f0cff0cdb5ebe7b029afcfc3ecb37982
 </br>
 
 | ID | Test Item | Scenario | Input | Expected Output | Test Factor | True or False |
 | :------- | ----: | ----: | ----: | ----: | ----: | ----: |
+<<<<<<< HEAD
 | 1 | Error handling on each input field | Test case 1 | alphabets(a-z), numbers(1-9), symbols (i.e. !, @, #, etc.)| Error messages specifying on whichever input should be shown if the respective field contains invalid input | Correctness, Usability |  |
 | 2 | Error handling on required input fields on click search  | Test case 2 | On Click | An error message should be presented to the user if any required field has not been filled | Correctness, Usability |  |  
 | 3 | Time required for analytic data to be reflected | Test case 3 | On Click | The expected time for analytic data such as the tables and charts should be less than 20 seconds or less | Correctness, Reliability |  | 
 | 4 | Visual feedback during the request and fetching of data | Test case 4 | On Click | A loading animation should be presented on the screen as a visual representation of the process of data fetching | Usability |  |
+=======
+| 1 | Flight project is a single page webpage, not multiple page webpage. | Test case 1 | On View | User doesn't required few webpage to run Flight Project. | Portability | True |
+| 2 | Network Connection is required to use the webpage. | Test case 2 | On View | When there's no Internet connection, Flight Project can't be run. | Integrity | True |  
+| 3 | Data will be dalay or wrong if network connection is unstable or poor. | Test case 3 | On View | When network is poor, the delay chart will show the wrong data with the airline. | Reliability | True | 
+| 4 | Database need to be connected for Flight project to show the data | Test case 4 | On View | When database is not connected, Flight project will unable to show any data when user choose the dropdown section. | Maintainability |  |
+>>>>>>> d19f9d37f0cff0cdb5ebe7b029afcfc3ecb37982
 </br>
 
 <h4> Flight Web Interface Testing (GUI) </h4>
