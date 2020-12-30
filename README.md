@@ -194,9 +194,8 @@ The outputs of the console log matched with the expected output, therefore all o
 
 </br>
 
-## GUI Testing
-</br>
-<h3>Mobile Compatibility Testing</h3>
+## 2.3 GUI Testing (Black box)
+<h3>2.3.1 Mobile Compatibility Testing</h3>
 <h4> Test Case 1 </h4>
 <p> Background design should align with data input section. </p>
 </br>
@@ -220,29 +219,30 @@ The outputs of the console log matched with the expected output, therefore all o
 
 <h4>Test Case 1</h4>
 
-</br>
+
 <h5>Before</h5>
 <img src="media/gui1.jpg">
 </br>
 
-</br>
+
 <h5>After</h5>
 <img src= >
 
 <h4>Test Case 2</h4>
 
-</br>
+
 <h5>Before</h5>
 <img src="media/gui2.jpg">
 </br>
 
-</br>
+
 <h5>After</h5>
 <img src= >
+</br>
 
 <h4>Test Case 3</h4>
 
-</br>
+
 <h5>Before</h5>
 <img src="media/gui2.jpg">
 </br>
@@ -256,7 +256,7 @@ The outputs of the console log matched with the expected output, therefore all o
 <p>The output of the testing was not same as expected output, hence, changes were made on this project. After the changes were made, the project has pass the test and there aren't any bugs were found in this project. </p>
 
 </br>
-<h3>User Experience Testing</h3>
+<h3>2.3.2 User Experience Testing</h3>
 <h4> Test Case 1 </h4>
 <p> Flight project is a single page webpage, not multiple page webpage. </p>
 </br>
@@ -282,31 +282,31 @@ The outputs of the console log matched with the expected output, therefore all o
 </br> 
 
 <h3>Result of Test Case</h3>
+</br>
 
 <h4>Test Case 1</h4>
-</br>
+
 <p>After testing, we found out that the project only has one page, even when we press search, it still remain on the initial page and show the result on the initial page.</p>
 
 <h4>Test Case 2</h4>
-</br>
+
 <p>The testing was pass for this test case that it required Internet connection to run this project. When we disconnect the Internet connection, we are unable to connect to the project. </p>
 <img src="media/UX.png">
 </br>
 
 <h4>Test Case 3</h4>
-</br>
+
 <p>After testing, we found out that when the connection is bad, if we change the data too fast, the data will delay and couldn't catch up with the input that we insert.</p>
 
 <h4>Test Case 4</h4>
-</br>
+
 <p>During the testing section, we found out that the dropdown section is blank if we didn't connect to the database.</p>
 
 </br>
 <h4>Conclusion</h4>
 <p>The testing was meet our expected output. Hence, all the testing were pass. Regarding bugs testing, there aren't any bugs were found in this project. </p>
 
-<h4> Interface Featurea Testing (GUI) </h4>
-</br>
+<h4>2.3.3 Interface Featurea Testing (GUI) </h4>
 <h5> Test Case 1 </h5>
 <p> View Search button alignment with different screen sizes. </p>
 </br>
@@ -337,9 +337,10 @@ The outputs of the console log matched with the expected output, therefore all o
 </br>
 
 <h3>Result of Test Case</h3>
+</br>
 
 <h4>Test Case 1</h4>
-</br>
+
 <h5>Before</h5>
 <img src="media/UI5.png">
 </br>
@@ -348,7 +349,7 @@ The outputs of the console log matched with the expected output, therefore all o
 <img src="">
 
 <h4>Test Case 2</h4>
-</br>
+
 <h5>Before Sorting</h5>
 <img src="media/UI3.png">
 </br>
@@ -358,7 +359,7 @@ The outputs of the console log matched with the expected output, therefore all o
 </br>
 
 <h4>Test Case 3</h4>
-</br>
+
 <h5>Before</h5>
 <img src="media/UI1.png">
 </br>
@@ -367,17 +368,21 @@ The outputs of the console log matched with the expected output, therefore all o
 <img src="">
 
 <h4>Test Case 4</h4>
-</br>
+
 <p>When 2 same destination and origin were choose, no data will be shown. </p>
 <img src="media/UI1.png">
 </br>
 
 <h4>Test Case 5</h4>
-</br>
+
 <p>When mouse is hover over pie chart, chart details will be shown.</p>
 <img src="media/UI2.png">
 </br>
 
-</br>
+
 <h4>Conclusion</h4>
-<p>The testing results meet the expected output, hence, all the test cases are pass. Regarding bug test, no bugs we found during the testing process. </p>
+<p>The testing results meet the expected output, hence, all the test cases are pass. Regarding bug test, there is a bug we found in GUI testing. </p>
+
+<h4> BUG found </h4>
+<p>If the user click the search button without choosing any data from the table, error message will pop out. </p>
+<img src="BUG.jpeg">
