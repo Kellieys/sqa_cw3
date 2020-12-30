@@ -280,7 +280,7 @@ The outputs of the console log matched with the expected output, therefore all o
 
 
 <h5>Improved software (After)</h5>
-<img src= >
+<img src= "media/M1.png">
 
 <h4>Test Case 2</h4>
 
@@ -291,7 +291,7 @@ The outputs of the console log matched with the expected output, therefore all o
 
 
 <h5>Improved software (After)</h5>
-<img src= >
+<img src="media/M2.png" >
 </br>
 
 <h4>Test Case 3</h4>
@@ -303,7 +303,7 @@ The outputs of the console log matched with the expected output, therefore all o
 
 </br>
 <h5>Improved software (After)</h5>
-<img src= >
+<img src="media/M3.png" >
 
 </br>
 <h4>Conclusion</h4>
@@ -403,7 +403,7 @@ The outputs of the console log matched with the expected output, therefore all o
 </br>
 
 <h5>Improved software (After)</h5>
-<img src="">
+<img src="media/UI6.png">
 
 <h4>Test Case 2</h4>
 
@@ -418,11 +418,11 @@ The outputs of the console log matched with the expected output, therefore all o
 <h4>Test Case 3</h4>
 
 <h5>Initial Software (Before)</h5>
-<img src="media/UI1.png">
+<img src="media/UI7.png">
 </br>
 
 <h5>Improved software (After)</h5>
-<img src="">
+<img src="media/UI8.png">
 
 <h4>Test Case 4</h4>
 
