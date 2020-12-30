@@ -195,7 +195,8 @@ The outputs of the console log matched with the expected output, therefore all o
 </br>
 
 ## 2.3 GUI Testing (Black box)
-<h3>2.3.1 Mobile Compatibility Testing</h3>
+### 2.3.1 Mobile Compatibility Testing
+</br>
 <h4> Test Case 1 </h4>
 <p> Background design should align with data input section. </p>
 </br>
@@ -256,7 +257,9 @@ The outputs of the console log matched with the expected output, therefore all o
 <p>The output of the testing was not same as expected output, hence, changes were made on this project. After the changes were made, the project has pass the test and there aren't any bugs were found in this project. </p>
 
 </br>
-<h3>2.3.2 User Experience Testing</h3>
+
+### 2.3.2 User Experience Testing
+</br>
 <h4> Test Case 1 </h4>
 <p> Flight project is a single page webpage, not multiple page webpage. </p>
 </br>
@@ -306,7 +309,8 @@ The outputs of the console log matched with the expected output, therefore all o
 <h4>Conclusion</h4>
 <p>The testing was meet our expected output. Hence, all the testing were pass. Regarding bugs testing, there aren't any bugs were found in this project. </p>
 
-<h4>2.3.3 Interface Featurea Testing (GUI) </h4>
+### 2.3.3 Interface Featurea Testing (GUI) 
+</br>
 <h5> Test Case 1 </h5>
 <p> View Search button alignment with different screen sizes. </p>
 </br>
