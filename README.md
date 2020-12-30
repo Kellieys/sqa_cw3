@@ -346,7 +346,7 @@ The outputs of the console log matched with the expected output, therefore all o
 
 <h4>Test Case 2</h4>
 
-<p>The testing was pass for this test case that it required Internet connection to run this project. When we disconnect the Internet connection, we are unable to connect to the project. </p>
+<p>The testing was pass for this test case that it required Internet connection to run this project. When we disconnect the Internet connection, we are unable to access the website. </p>
 <img src="media/UX.png">
 </br>
 
