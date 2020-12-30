@@ -385,4 +385,4 @@ The outputs of the console log matched with the expected output, therefore all o
 
 <h4> BUG found </h4>
 <p>If the user click the search button without choosing any data from the table, error message will pop out. </p>
-<img src="BUG.jpeg">
+<img src="BUG1.jpeg">
