@@ -211,9 +211,9 @@ The outputs of the console log matched with the expected output, therefore all o
 
 | ID | Test Item | Scenarios | Input | Expected Output | Test Factor | Pass or Fail|
 | :------- | ----: | ----: | ----: | ----: | ----: | ----: |
-| 1 | Background design should align with data input section | Test Case 1 | On View | Background design is fixed and smaller than data input section (1). | Correctness | Pass | 
-| 2 | Width of table should align with the user input section. | Test Case 2 | On View | Width of table is following the background design and not align with data input section. | Correctness | Pass | 
-| 3 | Graph of delay type and time should be shown clearly. | Test Case 3 | On View | Showing the graph of delay type or delay time in mobile vertical mode, both graph is overlaying. When using flight project in mobile horizontal mode, the graph is showing fine but are not fitting in the designed box.(2) | Usability | Pass | 
+| 1 | Background design should align with data input section | Test Case 1 | N/A | Background design is fixed and smaller than data input section. | Correctness | Fail | 
+| 2 | Width of table should align with the user input section. | Test Case 2 | N/A | Width of table is following the background design and not align with data input section. | Correctness | Fail | 
+| 3 | Graph of delay type and time should be shown clearly. | Test Case 3 | N/A | Showing the graph of delay type or delay time in mobile vertical mode, both graph is overlaying. When using flight project in mobile horizontal mode, the graph is showing fine but are not fitting in the designed box. | Usability | Fail | 
 
 </br>
 <h3>Result of Test Case</h3>
@@ -221,40 +221,40 @@ The outputs of the console log matched with the expected output, therefore all o
 <h4>Test Case 1</h4>
 
 
-<h5>Before</h5>
+<h5>Initial Software (Before)</h5>
 <img src="media/gui1.jpg">
 </br>
 
 
-<h5>After</h5>
+<h5>Improved software (After)</h5>
 <img src= >
 
 <h4>Test Case 2</h4>
 
 
-<h5>Before</h5>
+<h5>Initial Software (Before)</h5>
 <img src="media/gui2.jpg">
 </br>
 
 
-<h5>After</h5>
+<h5>Improved software (After)</h5>
 <img src= >
 </br>
 
 <h4>Test Case 3</h4>
 
 
-<h5>Before</h5>
+<h5>Initial Software (Before)</h5>
 <img src="media/gui2.jpg">
 </br>
 
 </br>
-<h5>After</h5>
+<h5>Improved software (After)</h5>
 <img src= >
 
 </br>
 <h4>Conclusion</h4>
-<p>The output of the testing was not same as expected output, hence, changes were made on this project. After the changes were made, the project has pass the test and there aren't any bugs were found in this project. </p>
+<p>All of the test case failed the test. Based on that we can tell that this software is not well designed for mobile devices. No bugs were found during the testing process. </p>
 
 </br>
 
@@ -278,10 +278,10 @@ The outputs of the console log matched with the expected output, therefore all o
 
 | ID | Test Item | Scenarios | Input | Expected Output | Test Factor | True or False |
 | :------- | ----: | ----: | ----: | ----: | ----: | ----: |
-| 1 | Flight project is a single page webpage, not multiple page webpage. | Test case 1 | On View | User doesn't required few webpage to run Flight Project. | Portability | True |
-| 2 | Network Connection is required to use the webpage. | Test case 2 | On View | When there's no Internet connection, Flight Project can't be run. | Integrity | True |  
-| 3 | Data will be dalay or wrong if network connection is unstable or poor. | Test case 3 | On View | When network is poor, the delay chart will show the wrong data with the airline. | Reliability | True | 
-| 4 | Database need to be connected for Flight project to show the data | Test case 4 | On View | When database is not connected, Flight project will unable to show any data when user choose the dropdown section. | Maintainability | True |
+| 1 | Flight project is a single page webpage, not multiple page webpage. | Test case 1 | N/A | User doesn't required few webpage to run Flight Project. | Portability | True |
+| 2 | Network Connection is required to use the webpage. | Test case 2 | N/A | When there's no Internet connection, Flight Project can't be run. | Integrity | True |  
+| 3 | Data will be dalay or wrong if network connection is unstable or poor. | Test case 3 | N/A | When network is poor, the delay chart will show the wrong data with the airline. | Reliability | True | 
+| 4 | Database need to be connected for Flight project to show the data | Test case 4 | N/A | When database is not connected, Flight project will unable to show any data when user choose the dropdown section. | Maintainability | True |
 </br> 
 
 <h3>Result of Test Case</h3>
@@ -309,7 +309,7 @@ The outputs of the console log matched with the expected output, therefore all o
 <h4>Conclusion</h4>
 <p>The testing was meet our expected output. Hence, all the testing were pass. Regarding bugs testing, there aren't any bugs were found in this project. </p>
 
-### 2.3.3 Interface Featurea Testing (GUI) 
+### 2.3.3 Interface Features Testing (GUI) 
 </br>
 <h5> Test Case 1 </h5>
 <p> View Search button alignment with different screen sizes. </p>
@@ -333,11 +333,11 @@ The outputs of the console log matched with the expected output, therefore all o
 
 | ID | Test Item | Scenarios | Input | Expected Output | Test Factor | Pass or Fail |
 | :------- | ----: | ----: | ----: | ----: | ----: | ----: |
-| 1 | Search button alignment on screen resizing | Test case 1 | On View | On resize, the search button aligns accordingly | Correctness | Pass |
+| 1 | Search button alignment on screen resizing | Test case 1 | N/A | On resize, the search button aligns accordingly | Correctness | Fail |
 | 2 | Click arrow button to sort | Test case 2 | On Click | The data of flights on table, appear in that particular sorting order | Correctness | Pass |  
-| 3 | Text and image size with various  window sizes | Test case 3 | On View | On changing screen size, text and images changes size accordingly | Correctness | Pass | 
-| 4 | Select same destination as origin | Test case 4 | On Click | Error message should pop-up | Correctness | Pass |
-| 5 | Hover mouse over pie chart | Test case 5 | On View | On hovering mouse, the data should display accordingly| Correctness | Pass | 
+| 3 | Text and image size with various  window sizes | Test case 3 | N/A | On changing screen size, text and images changes size accordingly | Correctness | Fail | 
+| 4 | Select same destination as origin | Test case 4 | On Click | Error message should pop-up | Correctness | Fail |
+| 5 | Hover mouse over pie chart | Test case 5 | N/A | On hovering mouse, the data should display accordingly| Correctness | Pass | 
 </br>
 
 <h3>Result of Test Case</h3>
@@ -345,11 +345,11 @@ The outputs of the console log matched with the expected output, therefore all o
 
 <h4>Test Case 1</h4>
 
-<h5>Before</h5>
+<h5>Initial Software (Before)</h5>
 <img src="media/UI5.png">
 </br>
 
-<h5>After</h5>
+<h5>Improved software (After)</h5>
 <img src="">
 
 <h4>Test Case 2</h4>
@@ -364,11 +364,11 @@ The outputs of the console log matched with the expected output, therefore all o
 
 <h4>Test Case 3</h4>
 
-<h5>Before</h5>
+<h5>Initial Software (Before)</h5>
 <img src="media/UI1.png">
 </br>
 
-<h5>After</h5>
+<h5>Improved software (After)</h5>
 <img src="">
 
 <h4>Test Case 4</h4>
@@ -383,10 +383,10 @@ The outputs of the console log matched with the expected output, therefore all o
 <img src="media/UI2.png">
 </br>
 
+### 2.3.4 Bug found 
+</br>
+<p>If the user click the search button without inputing the required field eg: origin,destination and time, error message will pop out. It clearly shows that the website is not doing error handling.</p>
+<img src="media/BUG1.jpeg">
 
 <h4>Conclusion</h4>
-<p>The testing results meet the expected output, hence, all the test cases are pass. Regarding bug test, there is a bug we found in GUI testing. </p>
-
-<h4> BUG found </h4>
-<p>If the user click the search button without choosing any data from the table, error message will pop out. </p>
-<img src="media/BUG1.jpeg">
+<p>2 out of 5 test case pass the testing and 3 of it failed for the GUI testing part. Regarding the bugs test, there is a bug that we found which mentioned above. </p>
