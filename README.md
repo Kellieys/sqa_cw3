@@ -140,7 +140,8 @@ The outputs of the console log matched with the expected output, therefore all o
 
 </br>
 <h5>Before</h5>
-<img src= "media/gui1.png">
+<img src="media/gui1.jpg">
+</br>
 
 </br>
 <h5>After</h5>
@@ -150,7 +151,8 @@ The outputs of the console log matched with the expected output, therefore all o
 
 </br>
 <h5>Before</h5>
-<img src= "media/gui2.png">
+<img src="media/gui2.jpg">
+</br>
 
 </br>
 <h5>After</h5>
@@ -160,7 +162,8 @@ The outputs of the console log matched with the expected output, therefore all o
 
 </br>
 <h5>Before</h5>
-<img src= "media/gui2.png">
+<img src="media/gui2.jpg">
+</br>
 
 </br>
 <h5>After</h5>
@@ -205,7 +208,8 @@ The outputs of the console log matched with the expected output, therefore all o
 <h4>Test Case 2</h4>
 </br>
 <p>The testing was pass for this test case that it required Internet connection to run this project. When we disconnect the Internet connection, we are unable to connect to the project. </p>
-<img src="UX.png">
+<img src="media/UX.png">
+</br>
 
 <h4>Test Case 3</h4>
 </br>
@@ -255,7 +259,8 @@ The outputs of the console log matched with the expected output, therefore all o
 <h4>Test Case 1</h4>
 </br>
 <h5>Before</h5>
-<img src="UI5.png">
+<img src="media/UI5.png">
+</br>
 
 <h5>After</h5>
 <img src="">
@@ -263,15 +268,18 @@ The outputs of the console log matched with the expected output, therefore all o
 <h4>Test Case 2</h4>
 </br>
 <h5>Before Sorting</h5>
-<img src="UI3.png">
+<img src="media/UI3.png">
+</br>
 
 <h5>After Sorting</h5>
-<img src="UI4.png">
+<img src="media/UI4.png">
+</br>
 
 <h4>Test Case 3</h4>
 </br>
 <h5>Before</h5>
-<img src="UI1.png">
+<img src="media/UI1.png">
+</br>
 
 <h5>After</h5>
 <img src="">
@@ -279,12 +287,14 @@ The outputs of the console log matched with the expected output, therefore all o
 <h4>Test Case 4</h4>
 </br>
 <p>When 2 same destination and origin were choose, no data will be shown. </p>
-<img src= "UI1.png">
+<img src="media/UI1.png">
+</br>
 
 <h4>Test Case 5</h4>
 </br>
 <p>When mouse is hover over pie chart, chart details will be shown.</p>
-<img src= "UI2.png">
+<img src="media/UI2.png">
+</br>
 
 </br>
 <h4>Conclusion</h4>
