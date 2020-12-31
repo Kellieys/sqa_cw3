@@ -313,7 +313,7 @@ The outputs of the console log matched with the expected output, therefore all o
 
 <h5>Initial Software (Before)</h5>
 <img src="media/gui2.jpg">
-<p>Img 2.3.1.5 Data chart is squeezed together.</p>
+<p>Img 2.3.1.5 Data chart is not align with background.</p>
 </br>
 
 </br>
@@ -447,7 +447,6 @@ The outputs of the console log matched with the expected output, therefore all o
 <img src="media/UI4.png">
 <p>Img 2.3.3.4 Sorted data.</p>
 </br>
-
 <h4>Test Case 3</h4>
 
 <h5>Initial Software (Before)</h5>
