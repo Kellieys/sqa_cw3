@@ -287,22 +287,25 @@ The outputs of the console log matched with the expected output, therefore all o
 
 <h5>Initial Software (Before)</h5>
 <img src="media/gui1.jpg">
+<p>Img 2.3.1.1 UI looks messy and not align.</p>
 </br>
 
 
 <h5>Improved software (After)</h5>
 <img src= "media/M1.png">
-
+<p>Img 2.3.1.2 EVerything is well organised and aligned.</p>
 <h4>Test Case 2</h4>
 
 
 <h5>Initial Software (Before)</h5>
 <img src="media/gui2.jpg">
+<p>Img 2.3.1.3 User input section doesn't fit background.</p>
 </br>
 
 
 <h5>Improved software (After)</h5>
 <img src="media/M2.png" >
+<p>Img 2.3.1.4 User input section is fit to the background.</p>
 </br>
 
 <h4>Test Case 3</h4>
@@ -310,11 +313,13 @@ The outputs of the console log matched with the expected output, therefore all o
 
 <h5>Initial Software (Before)</h5>
 <img src="media/gui2.jpg">
+<p>Img 2.3.1.5 Data chart is squeezed together.</p>
 </br>
 
 </br>
 <h5>Improved software (After)</h5>
 <img src="media/M3.png" >
+<p>Img 2.3.1.6 Data chart is shown clearly.</p>
 
 </br>
 <h4>Conclusion</h4>
@@ -325,27 +330,27 @@ The outputs of the console log matched with the expected output, therefore all o
 ### 2.3.2 User Experience Testing
 </br>
 <h4> Test Case 1 </h4>
-<p> Flight project is a single page webpage, not multiple page webpage. </p>
+<p> Input any character in the input field </p>
 </br>
 
 <h4> Test case 2 </h4>
-<p> Network Connection is required to use the webpage. </p>
+<p> Click the submit button on the input section without all required input filled </p>
 </br>
 
 <h4> Test case 3 </h4>
-<p> Data will be dalay or rong if network connection is unstable or poor.  </p>
+<p> After all required input have been selected, press on the search button and inspect the time required for data to be reflected  </p>
 </br>
 
 <h4> Test case 4 </h4>
-<p> Database need to be connected to show data. </p>
+<p> After all required input have been selected, press on the search button and inspect if there's any visual hint of feedback such as a loading spinner. </p>
 </br>
 
 | ID | Test Item | Scenarios | Input | Expected Output | Test Factor | True or False |
 | :------- | ----: | ----: | ----: | ----: | ----: | ----: |
-| 1 | Flight project is a single page webpage, not multiple page webpage. | Test case 1 | N/A | User doesn't required few webpage to run Flight Project. | Portability | True |
-| 2 | Network Connection is required to use the webpage. | Test case 2 | N/A | When there's no Internet connection, Flight Project can't be run. | Integrity | True |  
-| 3 | Data will be dalay or wrong if network connection is unstable or poor. | Test case 3 | N/A | When network is poor, the delay chart will show the wrong data with the airline. | Reliability | True | 
-| 4 | Database need to be connected for Flight project to show the data | Test case 4 | N/A | When database is not connected, Flight project will unable to show any data when user choose the dropdown section. | Maintainability | True |
+| 1 | Error handling on each input field | Test case 1 | alphabets(a-z), numbers(1-9), symbols (i.e. !, @, #, etc.)| Error messages specifying on whichever input should be shown if the respective field contains invalid input | Correctness, Usability | Pass |
+| 2 | Error handling on required input fields on click search  | Test case 2 | On Click | An error message should be presented to the user if any required field has not been filled | Correctness, Usability | Fail |  
+| 3 | Time required for analytic data to be reflected | Test case 3 | On Click | The expected time for analytic data such as the tables and charts should be less than 20 seconds or less | Correctness, Reliability | Pass | 
+| 4 | Visual feedback during the request and fetching of data | Test case 4 | On Click | A loading animation should be presented on the screen as a visual representation of the process of data fetching | Usability | Fail |
 </br> 
 
 <h3>Result of Test Case</h3>
@@ -353,25 +358,39 @@ The outputs of the console log matched with the expected output, therefore all o
 
 <h4>Test Case 1</h4>
 
-<p>After testing, we found out that the project only has one page, even when we press search, it still remain on the initial page and show the result on the initial page.</p>
+<p>No option message will pop out if user input invalid input as image shown.</p>
+<img src="media/UX6.png">
+<p>Img 2.3.2.1 No option message </p>
+</br>
 
 <h4>Test Case 2</h4>
-
-<p>The testing was pass for this test case that it required Internet connection to run this project. When we disconnect the Internet connection, we are unable to access the website. </p>
-<img src="media/UX.png">
+<h5>Initial Software (Before)</h5>
+<img src="media/UX3.png">
+<p>Img 2.3.2.2 Nothing happen when user click search without filling all field.</p>
+</br>
+<h5>Improved Software (After)
+<img src="media/UX2.png">
+<p>Img 2.3.2.3 Error message pop out to inform user to fill the field.</p>
 </br>
 
 <h4>Test Case 3</h4>
-
-<p>After testing, we found out that when the connection is bad, if we change the data too fast, the data will delay and couldn't catch up with the input that we insert.</p>
+<p>The data was able to show in 20 seconds or lesser. Time taken for Flight project to load the data is based on the database size. If there are too many data, it will takes longer time to load the data.</p>
 
 <h4>Test Case 4</h4>
+<h5>Initial Software (Before)</h5>
+<img src="media/UX4.png">
+<p>Img 2.3.2.4 No loading animation.</p>
+</br>
+<h5>Improved Software (After)</h5>
+<img src="media/UX5.png">
+<p>Img 2.3.2.5 Diamond shaped loading animation.</p>
+</br>
 
-<p>During the testing section, we found out that the dropdown section is blank if we didn't connect to the database.</p>
+<p></p>
 
 </br>
 <h4>Conclusion</h4>
-<p>The testing was meet our expected output. Hence, all the testing were pass. Regarding bugs testing, there aren't any bugs were found in this project. </p>
+<p>Two out of four test cases pass the test, 2 of them were failed. Test cases are all pass after improvements were made in this software.</p>
 
 ### 2.3.3 Interface Features Testing (GUI) 
 </br>
@@ -411,46 +430,53 @@ The outputs of the console log matched with the expected output, therefore all o
 
 <h5>Initial Software (Before)</h5>
 <img src="media/UI5.png">
+<p>Img 2.3.3.1 Search button is not align.</p>
 </br>
 
 <h5>Improved software (After)</h5>
 <img src="media/UI6.png">
-
+<p>Img 2.3.3.2 Search button is align accordingly.</p>
 <h4>Test Case 2</h4>
 
 <h5>Before Sorting</h5>
 <img src="media/UI3.png">
+<p>Img 2.3.3.3 Unsorted data.</p>
 </br>
 
 <h5>After Sorting</h5>
 <img src="media/UI4.png">
+<p>Img 2.3.3.4 Sorted data.</p>
 </br>
 
 <h4>Test Case 3</h4>
 
 <h5>Initial Software (Before)</h5>
 <img src="media/UI7.png">
+<p>Img 2.3.3.5 Image and text size not changing.</p>
 </br>
 
 <h5>Improved software (After)</h5>
 <img src="media/UI8.png">
-
+<p>Img 2.3.3.6 Image and text size changed accordingly.</p>
 <h4>Test Case 4</h4>
 
 <p>When 2 same destination and origin were choose, no data will be shown. </p>
 <img src="media/UI1.png">
+<p>Img 2.3.3.7 No data is showing</p>
 </br>
 
 <h4>Test Case 5</h4>
 
 <p>When mouse is hover over pie chart, chart details will be shown.</p>
 <img src="media/UI2.png">
+<p>Img 2.3.3.8 Details shown.</p>
 </br>
 
 ### 2.3.4 Bug found 
 </br>
 <p>If the user click the search button without inputing the required field eg: origin,destination and time, error message will pop out. It clearly shows that the website is not doing error handling.</p>
 <img src="media/BUG1.jpeg">
+<p>Img 2.3.4.1 Error message </p>
 
 <h4>Conclusion</h4>
 <p>2 out of 5 test case pass the testing and 3 of it failed for the GUI testing part. Regarding the bugs test, there is a bug that we found which mentioned above. </p>
